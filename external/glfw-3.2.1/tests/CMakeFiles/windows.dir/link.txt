@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/windows.dir/windows.c.o CMakeFiles/windows.dir/__/deps/getopt.c.o CMakeFiles/windows.dir/__/deps/glad.c.o  -o ../../../out/windows -rdynamic ../../../lib/libglfw3.a -lrt -lm -ldl -lX11 -lpthread -lXrandr -lXinerama -lXxf86vm -lXcursor 

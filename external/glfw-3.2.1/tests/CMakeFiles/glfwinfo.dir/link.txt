@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/glfwinfo.dir/glfwinfo.c.o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o CMakeFiles/glfwinfo.dir/__/deps/glad.c.o  -o ../../../out/glfwinfo -rdynamic ../../../lib/libglfw3.a -lrt -lm -ldl -lX11 -lpthread -lXrandr -lXinerama -lXxf86vm -lXcursor 

@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/reopen.dir/reopen.c.o CMakeFiles/reopen.dir/__/deps/glad.c.o  -o ../../../out/reopen -rdynamic ../../../lib/libglfw3.a -lrt -lm -ldl -lX11 -lpthread -lXrandr -lXinerama -lXxf86vm -lXcursor 

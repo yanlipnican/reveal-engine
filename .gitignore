@@ -1,0 +1,14 @@
+/cmake_install.cmake
+/CMakeCache.txt
+/Makefile
+/engine.cbp
+/bin
+/CMakeFiles
+/cmake-build-debug
+/lib
+/out
+.vscode
+.idea
+/external/CMakeFiles
+/external/cmake_install.cmake
+/external/Makefile

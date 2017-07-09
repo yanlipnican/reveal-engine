@@ -1,0 +1,1988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="GL"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\external\;CMake Files\external\glfw-3.2.1\;CMake Files\external\glfw-3.2.1\CMake\;CMake Files\external\glfw-3.2.1\CMake\modules\;CMake Files\external\glfw-3.2.1\src\;CMake Files\external\glfw-3.2.1\examples\;CMake Files\external\glfw-3.2.1\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/external"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GLEW_2000">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/lib/libGLEW_2000.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/external"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include/GLFW"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glew-2.0.0/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/Makefile&quot;  VERBOSE=1 GLEW_2000"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GLEW_2000/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/lib/libGLEW_2000.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/external"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include/GLFW"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glew-2.0.0/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/Makefile&quot;  VERBOSE=1 GLEW_2000/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uninstall">
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/Makefile&quot;  VERBOSE=1 uninstall"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/lib/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/lib/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="boing">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/boing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 boing"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="boing/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/boing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 boing/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gears">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/gears" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 gears"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gears/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/gears" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 gears/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="heightmap">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/heightmap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 heightmap"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="heightmap/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/heightmap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 heightmap/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="particles">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/particles" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 particles"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="particles/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/particles" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 particles/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wave">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/wave" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 wave"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wave/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/wave" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 wave/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/simple" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 simple"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/simple" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 simple/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="splitview">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/splitview" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 splitview"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="splitview/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/splitview" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 splitview/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="reopen">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/reopen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 reopen"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="reopen/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/reopen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 reopen/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="joysticks">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/joysticks" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 joysticks"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="joysticks/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/joysticks" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 joysticks/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="monitors">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/monitors" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 monitors"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="monitors/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/monitors" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 monitors/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="iconify">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/iconify" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 iconify"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="iconify/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/iconify" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 iconify/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfwinfo">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/glfwinfo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 glfwinfo"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfwinfo/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/glfwinfo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 glfwinfo/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="empty">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/empty" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 empty"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="empty/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/empty" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 empty/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cursor">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/cursor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 cursor"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cursor/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/cursor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 cursor/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="threads">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/threads" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 threads"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="threads/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/threads" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 threads/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clipboard">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/clipboard" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clipboard"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clipboard/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/clipboard" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clipboard/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="title">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/title" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 title"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="title/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/title" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 title/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="msaa">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/msaa" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 msaa"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="msaa/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/msaa" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 msaa/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="events">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/events" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 events"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="events/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/events" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 events/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gamma">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/gamma" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 gamma"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gamma/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/gamma" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 gamma/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="icon">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/icon" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 icon"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="icon/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/icon" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 icon/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tearing">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/tearing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 tearing"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tearing/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/tearing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 tearing/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sharing">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/sharing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 sharing"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sharing/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/sharing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 sharing/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="windows">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/windows" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 windows"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="windows/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/windows" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 windows/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="timeout">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/timeout" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 timeout"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="timeout/fast">
+				<Option output="/home/yan/Workspace/cpp-game-engine/engine/out/timeout" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yan/Workspace/cpp-game-engine/engine/out"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTW_STATIC"/>
+					<Add option="-DTW_NO_LIB_PRAGMA"/>
+					<Add option="-DTW_NO_DIRECT3D"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps"/>
+					<Add directory="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 timeout/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glew-2.0.0/src/glew.c">
+			<Option target="GLEW_2000"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c">
+			<Option target="particles"/>
+			<Option target="monitors"/>
+			<Option target="iconify"/>
+			<Option target="glfwinfo"/>
+			<Option target="clipboard"/>
+			<Option target="msaa"/>
+			<Option target="events"/>
+			<Option target="gamma"/>
+			<Option target="tearing"/>
+			<Option target="windows"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.h">
+			<Option target="particles"/>
+			<Option target="monitors"/>
+			<Option target="iconify"/>
+			<Option target="glfwinfo"/>
+			<Option target="clipboard"/>
+			<Option target="msaa"/>
+			<Option target="events"/>
+			<Option target="gamma"/>
+			<Option target="tearing"/>
+			<Option target="windows"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c">
+			<Option target="boing"/>
+			<Option target="gears"/>
+			<Option target="heightmap"/>
+			<Option target="particles"/>
+			<Option target="wave"/>
+			<Option target="simple"/>
+			<Option target="splitview"/>
+			<Option target="reopen"/>
+			<Option target="joysticks"/>
+			<Option target="monitors"/>
+			<Option target="iconify"/>
+			<Option target="glfwinfo"/>
+			<Option target="empty"/>
+			<Option target="cursor"/>
+			<Option target="threads"/>
+			<Option target="clipboard"/>
+			<Option target="title"/>
+			<Option target="msaa"/>
+			<Option target="events"/>
+			<Option target="gamma"/>
+			<Option target="icon"/>
+			<Option target="tearing"/>
+			<Option target="sharing"/>
+			<Option target="windows"/>
+			<Option target="timeout"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad/glad.h">
+			<Option target="boing"/>
+			<Option target="gears"/>
+			<Option target="heightmap"/>
+			<Option target="particles"/>
+			<Option target="wave"/>
+			<Option target="simple"/>
+			<Option target="splitview"/>
+			<Option target="reopen"/>
+			<Option target="joysticks"/>
+			<Option target="monitors"/>
+			<Option target="iconify"/>
+			<Option target="glfwinfo"/>
+			<Option target="empty"/>
+			<Option target="cursor"/>
+			<Option target="threads"/>
+			<Option target="clipboard"/>
+			<Option target="title"/>
+			<Option target="msaa"/>
+			<Option target="events"/>
+			<Option target="gamma"/>
+			<Option target="icon"/>
+			<Option target="tearing"/>
+			<Option target="sharing"/>
+			<Option target="windows"/>
+			<Option target="timeout"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/tinycthread.c">
+			<Option target="particles"/>
+			<Option target="empty"/>
+			<Option target="threads"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/tinycthread.h">
+			<Option target="particles"/>
+			<Option target="empty"/>
+			<Option target="threads"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/boing.c">
+			<Option target="boing"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/gears.c">
+			<Option target="gears"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/heightmap.c">
+			<Option target="heightmap"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/particles.c">
+			<Option target="particles"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/simple.c">
+			<Option target="simple"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/splitview.c">
+			<Option target="splitview"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/wave.c">
+			<Option target="wave"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include/GLFW/glfw3.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include/GLFW/glfw3native.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/egl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/egl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glfw_config.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glx_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glx_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/input.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/internal.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/linux_joystick.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/linux_joystick.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/posix_time.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/posix_time.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/posix_tls.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/posix_tls.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/vulkan.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/x11_init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/x11_monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/x11_platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/x11_window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/xkb_unicode.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/xkb_unicode.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/clipboard.c">
+			<Option target="clipboard"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/cursor.c">
+			<Option target="cursor"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/empty.c">
+			<Option target="empty"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/events.c">
+			<Option target="events"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/gamma.c">
+			<Option target="gamma"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/glfwinfo.c">
+			<Option target="glfwinfo"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/icon.c">
+			<Option target="icon"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/iconify.c">
+			<Option target="iconify"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/joysticks.c">
+			<Option target="joysticks"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/monitors.c">
+			<Option target="monitors"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/msaa.c">
+			<Option target="msaa"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/reopen.c">
+			<Option target="reopen"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/sharing.c">
+			<Option target="sharing"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/tearing.c">
+			<Option target="tearing"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/threads.c">
+			<Option target="threads"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/timeout.c">
+			<Option target="timeout"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/title.c">
+			<Option target="title"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/windows.c">
+			<Option target="windows"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/CMake/modules/FindVulkan.cmake">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\CMake\modules\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/CMake/modules/FindVulkan.cmake">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\CMake\modules\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/CMake/modules/FindVulkan.cmake">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\CMake\modules\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\src\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\src\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\src\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\src\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\src\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\src\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\src\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\src\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\src\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\src\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\src\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\src\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\examples\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\examples\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\examples\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\tests\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\tests\"/>
+		</Unit>
+		<Unit filename="/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw-3.2.1\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

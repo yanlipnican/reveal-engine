@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/splitview.dir/splitview.c.o CMakeFiles/splitview.dir/__/deps/glad.c.o  -o ../../../out/splitview -rdynamic ../../../lib/libglfw3.a -lrt -lm -ldl -lX11 -lpthread -lXrandr -lXinerama -lXxf86vm -lXcursor 
