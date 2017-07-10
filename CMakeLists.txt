@@ -76,7 +76,7 @@ set(SOURCE_FILES
         engine/Logger.h
         engine/Rendering/RendererApi.h
         engine/Rendering/Renderer.cpp
-        )
+        engine/Rendering/Shader.cpp engine/Rendering/Shader.h engine/Rendering/OpenGL/GLShader.cpp engine/Rendering/OpenGL/GLShader.h engine/util/FileUtil.h)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
