@@ -5,13 +5,13 @@
 #ifndef ENGINE_RENDERER_H
 #define ENGINE_RENDERER_H
 
+#include "engine/Rendering/Renderable.h"
 
 class Renderer {
 public:
-    virtual void init();
-    virtual void update();
-    virtual void end();
-    virtual bool isRunning();
+    virtual void submit(Renderable* object) = 0;
+    virtual void flush() = 0;
+    virtual void init() = 0;
 };
 
 

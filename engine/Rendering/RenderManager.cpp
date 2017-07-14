@@ -2,33 +2,49 @@
 // Created by yan on 7.7.17.
 //
 
+#include <iostream>
 #include "RenderManager.h"
-#include "OpenGL/GLRenderer.h"
+#include "OpenGL/GL2DRenderer.h"
 
 using namespace Engine;
 
+inline void deleteRenderer(Renderer* renderer) { delete renderer; }
+inline void flushRenderer(Renderer* renderer) { renderer->flush(); }
+inline void initRenderer(Renderer* renderer) { renderer->init(); }
+
 RenderManager::RenderManager(RendererAPI api) {
+    // initialise base renderers for api
     if(api == RendererAPI::OPEN_GL) {
-        renderer = new GLRenderer();
+        renderers["2D"] = new GL2DRenderer();
     }
 }
 
 RenderManager::~RenderManager() {
-    delete renderer;
+    iterateTroughRenderers(deleteRenderer);
 }
 
 void RenderManager::init() {
-    renderer->init();
+    iterateTroughRenderers(initRenderer);
 }
 
 void RenderManager::update() {
-    renderer->update();
+    iterateTroughRenderers(flushRenderer);
 }
 
-void RenderManager::end() {
-    renderer->end();
+Renderer *RenderManager::getRenderer(std::string type) {
+    return renderers[type];
 }
 
-bool RenderManager::isRunning() {
-    return renderer->isRunning();
+void RenderManager::iterateTroughRenderers(void (*fun)(Renderer *)) {
+    for(std::map<std::string, Renderer*>::iterator iterator = renderers.begin(); iterator != renderers.end(); iterator++) {
+        fun(iterator->second);
+    }
+}
+
+void RenderManager::addRenderer(Renderer *renderer, std::string type) {
+    if (renderers[type] != NULL) {
+        std::cout << "Renderer with type\"" << type << "\" is already loaded.";
+        return;
+    }
+    renderers[type] = renderer;
 }

@@ -37,7 +37,7 @@ void EngineManager::init() {
 
 void EngineManager::update() {
 
-    if (timing->delta() >= 1000/60) {
+    if (timing->delta() >= 1000/120) {
         renderManager->update();
         timing->resetTime();
     }
@@ -45,12 +45,11 @@ void EngineManager::update() {
 }
 
 void EngineManager::end() {
-    renderManager->end();
 }
 
 
 bool EngineManager::isRunning() {
-    return renderManager->isRunning();
+    return true;
 }
 
 // geters and setters

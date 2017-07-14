@@ -5,6 +5,7 @@
 #ifndef ENGINE_RENDERMANAGER_H
 #define ENGINE_RENDERMANAGER_H
 
+#include <map>
 #include "Renderer.h"
 #include "RendererApi.h"
 
@@ -12,15 +13,16 @@ namespace Engine {
 
     class RenderManager {
     private:
-        Renderer* renderer;
+        std::map<std::string, Renderer*> renderers;
+        void iterateTroughRenderers(void (*fun)(Renderer*));
         RendererAPI rendererAPI;
     public:
         RenderManager(RendererAPI);
         ~RenderManager();
         void init();
         void update();
-        void end();
-        bool isRunning();
+        void addRenderer(Renderer* renderer, std::string type);
+        Renderer* getRenderer(std::string type);
     };
 
 }

@@ -60,8 +60,6 @@ add_definitions(
 set(SOURCE_FILES
         main.cpp
         engine/Rendering/Renderer.h
-        engine/Rendering/OpenGL/GLRenderer.cpp
-        engine/Rendering/OpenGL/GLRenderer.h
         engine/Rendering/RenderManager.cpp
         engine/Rendering/RenderManager.h
         engine/Scene/SceneManager.cpp

@@ -3,8 +3,3 @@
 //
 
 #include "Renderer.h"
-
-void Renderer::init() {}
-void Renderer::update() {}
-void Renderer::end() {}
-bool Renderer::isRunning() {}
