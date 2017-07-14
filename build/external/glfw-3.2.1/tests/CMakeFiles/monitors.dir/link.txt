@@ -1,1 +1,0 @@
-/usr/bin/cc  -g   CMakeFiles/monitors.dir/monitors.c.o CMakeFiles/monitors.dir/__/deps/getopt.c.o CMakeFiles/monitors.dir/__/deps/glad.c.o  -o ../../../out/monitors -rdynamic ../../../lib/libglfw3.a -lrt -lm -ldl -lX11 -lpthread -lXrandr -lXinerama -lXxf86vm -lXcursor 

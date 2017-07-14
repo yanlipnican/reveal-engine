@@ -1,1 +1,0 @@
-/usr/bin/cc  -g   CMakeFiles/cursor.dir/cursor.c.o CMakeFiles/cursor.dir/__/deps/glad.c.o  -o ../../../out/cursor -rdynamic ../../../lib/libglfw3.a -lrt -lm -ldl -lX11 -lpthread -lXrandr -lXinerama -lXxf86vm -lXcursor 

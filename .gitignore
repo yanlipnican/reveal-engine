@@ -11,3 +11,4 @@
 .idea
 /external
 !/external/CMakeLists.txt
+/build
