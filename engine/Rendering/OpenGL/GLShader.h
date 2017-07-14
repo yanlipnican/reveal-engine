@@ -5,7 +5,7 @@
 #ifndef ENGINE_GLSHADER_H
 #define ENGINE_GLSHADER_H
 
-#include <string>;
+#include <string>
 #include <engine/Rendering/Shader.h>
 #include <engine/Rendering/OpenGL/GLRenderer.h>
 

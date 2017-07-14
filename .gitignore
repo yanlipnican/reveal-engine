@@ -9,6 +9,5 @@
 /out
 .vscode
 .idea
-/external/CMakeFiles
-/external/cmake_install.cmake
-/external/Makefile
+/external
+!/external/CMakeLists.txt

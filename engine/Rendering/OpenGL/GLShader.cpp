@@ -32,7 +32,6 @@ GLShader::GLShader(std::string vert_filename, std::string frag_filename) {
     GLuint FragmentShaderID = glCreateShader(GL_FRAGMENT_SHADER);
 
     ShaderCompilationError vert_compilation = compileShader(VertexShaderID, vert_src);
-
     if (vert_compilation.isError) {
         std::cout << vert_compilation.error << std::endl;
         compiled = false;
@@ -72,7 +71,7 @@ ShaderCompilationError checkProgram(GLuint id) {
     glGetProgramiv(id, GL_INFO_LOG_LENGTH, &InfoLogLength);
 
     ShaderCompilationError result;
-    result.error = false;
+    result.isError = false;
 
     if ( InfoLogLength > 0 ){
         std::vector<char> ProgramErrorMessage(InfoLogLength+1);
@@ -99,7 +98,7 @@ ShaderCompilationError compileShader(GLuint id, std::string source) {
     glGetShaderiv(id, GL_INFO_LOG_LENGTH, &InfoLogLength);
 
     ShaderCompilationError result;
-    result.error = false;
+    result.isError = false;
 
     if ( InfoLogLength > 0 ){
         std::vector<char> VertexShaderErrorMessage(InfoLogLength+1);

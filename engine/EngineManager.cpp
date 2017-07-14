@@ -22,13 +22,6 @@ EngineManager::~EngineManager() {
     delete logger;
 }
 
-void wait(long milliseconds) {
-    struct timespec req = {0};
-    req.tv_sec = 0;
-    req.tv_nsec = milliseconds * 1000000L;
-    nanosleep(&req, (struct timespec *)NULL);
-}
-
 // lifecycle
 
 void EngineManager::init() {

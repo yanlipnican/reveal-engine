@@ -21,7 +21,7 @@ namespace Engine {
     public:
         EngineManager();
         ~EngineManager();
-        void init();
+        void init();    
         void update();
         void end();
         bool isRunning();

@@ -1,0 +1,57 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/yan/Workspace/cpp-game-engine/engine/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2190571554/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2190571554.dir/build.make CMakeFiles/cmTryCompileExec2190571554.dir/build
+make[1]: Entering directory '/home/yan/Workspace/cpp-game-engine/engine/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/yan/Workspace/cpp-game-engine/engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2190571554.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2190571554.dir/CheckSymbolExists.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2190571554
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2190571554.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2190571554.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2190571554 -rdynamic 
+CMakeFiles/cmTryCompileExec2190571554.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTryCompileExec2190571554.dir/build.make:88: recipe for target 'cmTryCompileExec2190571554' failed
+make[1]: Leaving directory '/home/yan/Workspace/cpp-game-engine/engine/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2190571554] Error 1
+Makefile:117: recipe for target 'cmTryCompileExec2190571554/fast' failed
+make: *** [cmTryCompileExec2190571554/fast] Error 2
+
+File /home/yan/Workspace/cpp-game-engine/engine/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/yan/Workspace/cpp-game-engine/engine/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2905308829/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2905308829.dir/build.make CMakeFiles/cmTryCompileExec2905308829.dir/build
+make[1]: Entering directory '/home/yan/Workspace/cpp-game-engine/engine/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/yan/Workspace/cpp-game-engine/engine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2905308829.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2905308829.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2905308829
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2905308829.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2905308829.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2905308829 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTryCompileExec2905308829.dir/build.make:88: recipe for target 'cmTryCompileExec2905308829' failed
+make[1]: *** [cmTryCompileExec2905308829] Error 1
+make[1]: Leaving directory '/home/yan/Workspace/cpp-game-engine/engine/build/CMakeFiles/CMakeTmp'
+Makefile:117: recipe for target 'cmTryCompileExec2905308829/fast' failed
+make: *** [cmTryCompileExec2905308829/fast] Error 2
+
+

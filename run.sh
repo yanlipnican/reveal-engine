@@ -1,4 +1,6 @@
-BIN_DIR="bin"
+#!/usr/bin/env bash
+
+BIN_DIR="out"
 BIN_NAME="engine"
 DIR_NAME=`readlink -f "$0"`
 DIR_NAME=${DIR_NAME%/*}
