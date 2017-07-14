@@ -2,8 +2,7 @@
 // Created by yan on 7.7.17.
 //
 
-#ifndef ENGINE_RENDERMANAGER_H
-#define ENGINE_RENDERMANAGER_H
+#pragma once
 
 #include <map>
 #include "Renderer.h"
@@ -13,7 +12,8 @@ namespace Engine {
 
     class RenderManager {
     private:
-        std::map<int, Renderer*> renderers;
+        typedef std::map<int, Renderer*> renderersMap;
+        renderersMap renderers;
         void iterateTroughRenderers(void (*fun)(Renderer*));
         RendererAPI rendererAPI;
     public:
@@ -30,5 +30,3 @@ namespace Engine {
     };
 
 }
-
-#endif //ENGINE_RENDERMANAGER_H
