@@ -12,10 +12,10 @@ inline void deleteRenderer(Renderer* renderer) { delete renderer; }
 inline void flushRenderer(Renderer* renderer) { renderer->flush(); }
 inline void initRenderer(Renderer* renderer) { renderer->init(); }
 
-RenderManager::RenderManager(RendererAPI api) {
+RenderManager::RenderManager(RendererAPI api): rendererAPI(api) {
     // initialise base renderers for api
     if(api == RendererAPI::OPEN_GL) {
-        renderers["2D"] = new GL2DRenderer();
+        renderers[RENDERER_2D] = new GL2DRenderer();
     }
 }
 
@@ -31,20 +31,24 @@ void RenderManager::update() {
     iterateTroughRenderers(flushRenderer);
 }
 
-Renderer *RenderManager::getRenderer(std::string type) {
-    return renderers[type];
+Renderer *RenderManager::getRenderer(int id) {
+    return renderers[id];
 }
 
 void RenderManager::iterateTroughRenderers(void (*fun)(Renderer *)) {
-    for(std::map<std::string, Renderer*>::iterator iterator = renderers.begin(); iterator != renderers.end(); iterator++) {
+    for(std::map<int, Renderer*>::iterator iterator = renderers.begin(); iterator != renderers.end(); iterator++) {
         fun(iterator->second);
     }
 }
 
-void RenderManager::addRenderer(Renderer *renderer, std::string type) {
-    if (renderers[type] != NULL) {
-        std::cout << "Renderer with type\"" << type << "\" is already loaded.";
+void RenderManager::addRenderer(Renderer *renderer, int id) {
+    if (renderers[id] != NULL) {
+        std::cout << "Renderer with id\"" << id << "\" is already loaded.";
         return;
     }
-    renderers[type] = renderer;
+    renderers[id] = renderer;
+}
+
+Renderer *RenderManager::get2DRenderer() {
+    return renderers[RENDERER_2D];
 }

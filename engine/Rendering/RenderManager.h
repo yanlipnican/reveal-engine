@@ -13,7 +13,7 @@ namespace Engine {
 
     class RenderManager {
     private:
-        std::map<std::string, Renderer*> renderers;
+        std::map<int, Renderer*> renderers;
         void iterateTroughRenderers(void (*fun)(Renderer*));
         RendererAPI rendererAPI;
     public:
@@ -21,8 +21,12 @@ namespace Engine {
         ~RenderManager();
         void init();
         void update();
-        void addRenderer(Renderer* renderer, std::string type);
-        Renderer* getRenderer(std::string type);
+        enum BASE_RENDERER_TYPE {
+            RENDERER_2D = 2,
+        };
+        void addRenderer(Renderer* renderer, int id);
+        Renderer* getRenderer(int id);
+        Renderer* get2DRenderer();
     };
 
 }

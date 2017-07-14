@@ -27,11 +27,8 @@ namespace Engine {
         bool isRunning();
 
         RenderManager *getRenderManager() const;
-
         void setRenderManager(RenderManager *renderManager);
-
         SceneManager *getSceneManager() const;
-
         void setSceneManager(SceneManager *sceneManager);
     };
 
