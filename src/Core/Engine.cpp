@@ -3,23 +3,33 @@
 //
 
 #include <src/Core/Renderers/Renderer2D.h>
-#include "Engine.h"
+#include <src/Modules/TestModule.h>
+#include <iostream>
+#include <src/Core/Loggers/ConsoleLogger.h>
 
-namespace Engine::Core {
+using namespace Engine::Modules;
+
+namespace Engine { namespace Core {
 
     inline void deleteModule(Module* module) {delete module;}
     inline void initModule(Module* module) {module->init();}
     inline void updateModule(Module* module) {module->update();}
     inline void deleteRenderer(Renderer* renderer) {delete renderer;}
     inline void flushRenderer(Renderer* renderer) {renderer->flush();}
+    inline void deleteWindow(Window* window) {delete window;}
 
     Engine::Engine() {
+        logger = new ConsoleLogger();
         addRenderer(new Renderer2D(), "Renderer2D");
+        addModule(new TestModule(this), "TestModule");
+        openWindow("Engine");
     }
 
     Engine::~Engine() {
         iterateModules(deleteModule);
         iterateRenderers(deleteRenderer);
+        iterateWindows(deleteWindow);
+        delete logger;
     }
 
     void Engine::iterateModules(void (*fun)(Module *)) {
@@ -77,4 +87,17 @@ namespace Engine::Core {
         return windows[name];
     }
 
-}
+    void Engine::openWindow(std::string name) {
+        auto window = new Window(name);
+        windows[name] = window;
+    }
+
+    void Engine::closeWindow(std::string name) {
+        delete windows[name];
+    }
+
+    Logger *Engine::getLogger() {
+        return logger;
+    }
+
+} }

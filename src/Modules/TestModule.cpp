@@ -2,6 +2,7 @@
 // Created by yan on 15.7.17.
 //
 
+#include <iostream>
 #include "TestModule.h"
 
 using namespace Engine::Modules;
@@ -12,5 +13,4 @@ void TestModule::init() {
 }
 
 void TestModule::update() {
-
 }

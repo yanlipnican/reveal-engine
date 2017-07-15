@@ -8,7 +8,7 @@
 #include <vector>
 #include "Renderable2D.h"
 
-namespace Engine::Core {
+namespace Engine { namespace Core {
 
     class Renderer2D: public Renderer {
     private:
@@ -21,7 +21,7 @@ namespace Engine::Core {
         void sortQueue();
     };
 
-}
+} }
 
 
 

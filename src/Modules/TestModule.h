@@ -9,17 +9,18 @@
 
 using namespace Engine::Core;
 
-namespace Engine::Modules {
+namespace Engine { namespace Modules {
 
-    class TestModule: public Core::Module {
+    class TestModule: public Module {
     private:
         Renderer2D* renderer;
+        Logger* logger;
     public:
-        TestModule(Core::Engine* engine): Module(engine) {}
+        TestModule(Core::Engine* engine): Module(engine), logger(engine->getLogger()) {}
         void init() override;
         void update() override;
     };
 
-}
+} }
 
 

@@ -4,11 +4,13 @@
 
 #pragma once
 
-namespace Engine::Core {
+namespace Engine {
+    namespace Core {
 
-    class Renderer {
-    public:
-        virtual void flush() = 0;
-    };
+        class Renderer {
+        public:
+            virtual void flush() = 0;
+        };
 
+    }
 }

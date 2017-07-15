@@ -4,13 +4,17 @@
 
 #pragma once
 
-namespace Engine::Core {
+#include <string>
+
+namespace Engine { namespace Core {
 
     class Window {
     public:
+        Window(std::string title);
+        ~Window();
         bool shouldClose();
     };
 
-}
+} }
 
 
