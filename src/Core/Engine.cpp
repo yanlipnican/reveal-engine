@@ -2,6 +2,7 @@
 // Created by yan on 15.7.17.
 //
 
+#include <src/Core/Renderers/Renderer2D.h>
 #include "Engine.h"
 
 namespace Engine::Core {
@@ -12,7 +13,9 @@ namespace Engine::Core {
     inline void deleteRenderer(Renderer* renderer) {delete renderer;}
     inline void flushRenderer(Renderer* renderer) {renderer->flush();}
 
-    Engine::Engine() {}
+    Engine::Engine() {
+        addRenderer(new Renderer2D(), "Renderer2D");
+    }
 
     Engine::~Engine() {
         iterateModules(deleteModule);
