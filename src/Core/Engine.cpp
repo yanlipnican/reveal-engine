@@ -67,32 +67,32 @@ namespace Engine { namespace Core {
         return false;
     }
 
-    void Engine::addRenderer(Renderer *renderer, std::string name) {
+    void Engine::addRenderer(Renderer *renderer, const char* name) {
         renderers[name] = renderer;
     }
 
-    void Engine::addModule(Module *module, std::string name) {
+    void Engine::addModule(Module *module, const char* name) {
         modules[name] = module;
     }
 
-    Renderer *Engine::getRenderer(std::string name) {
+    Renderer *Engine::getRenderer(const char* name) {
         return renderers[name];
     }
 
-    Module *Engine::getModule(std::string name) {
+    Module *Engine::getModule(const char* name) {
         return modules[name];
     }
 
-    Window *Engine::getWindow(std::string name) {
+    Window *Engine::getWindow(const char* name) {
         return windows[name];
     }
 
-    void Engine::openWindow(std::string name) {
+    void Engine::openWindow(const char* name) {
         auto window = new Window(name);
         windows[name] = window;
     }
 
-    void Engine::closeWindow(std::string name) {
+    void Engine::closeWindow(const char* name) {
         delete windows[name];
     }
 
