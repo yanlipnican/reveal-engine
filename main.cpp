@@ -1,10 +1,11 @@
-#include <iostream>
-#include "engine/EngineManager.h"
+#include "src/Core/Engine.h"
+
+using namespace Engine;
 
 int main() {
-    
-    Engine::EngineManager engine;
-    engine.init();
+
+    Core::Engine engine;
+    engine.start();
 
     return 0;
 }

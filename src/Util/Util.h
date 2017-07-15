@@ -2,4 +2,6 @@
 // Created by yan on 15.7.17.
 //
 
-#include "GL2DRenderable.h"
+#pragma once
+
+#include "FileUtil.h"

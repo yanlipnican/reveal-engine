@@ -59,22 +59,7 @@ add_definitions(
 
 set(SOURCE_FILES
         main.cpp
-        engine/Rendering/Renderer.h
-        engine/Rendering/RenderManager.cpp
-        engine/Rendering/RenderManager.h
-        engine/Scene/SceneManager.cpp
-        engine/Scene/SceneManager.h
-        engine/Scene/Scene.cpp
-        engine/Scene/Scene.h
-        engine/EngineManager.cpp
-        engine/EngineManager.h
-        engine/Timing.cpp
-        engine/Timing.h
-        engine/Logger.cpp
-        engine/Logger.h
-        engine/Rendering/RendererApi.h
-        engine/Rendering/Renderer.cpp
-        engine/Rendering/Shader.cpp engine/Rendering/Shader.h engine/Rendering/OpenGL/GLShader.cpp engine/Rendering/OpenGL/GLShader.h engine/util/FileUtil.h)
+        src/Core/Engine.cpp src/Core/Engine.h src/Core/Renderer.h src/Util/Util.h src/Util/FileUtil.h src/Core/Renderers/Renderer2D.cpp src/Core/Renderers/Renderer2D.h src/Core/Renderers/Renderable2D.cpp src/Core/Renderers/Renderable2D.h src/Core/Window.cpp src/Core/Window.h)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
