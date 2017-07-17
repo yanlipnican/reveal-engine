@@ -1,0 +1,437 @@
+[
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine",
+  "command": "/usr/bin/c++   -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/AntTweakBar-1.16/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.1.2/include/GLFW -I/home/yan/Workspace/cpp-game-engine/engine/external/glm-0.9.7.1 -I/home/yan/Workspace/cpp-game-engine/engine/external/glew-1.13.0/include -I/home/yan/Workspace/cpp-game-engine/engine/external/assimp-3.0.1270/include -I/home/yan/Workspace/cpp-game-engine/engine/external/bullet-2.81-rev2613/src -I/home/yan/Workspace/cpp-game-engine/engine/. -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -m64 -g   -std=gnu++11 -o CMakeFiles/engine.dir/main.cpp.o -c /home/yan/Workspace/cpp-game-engine/engine/main.cpp",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/main.cpp"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine",
+  "command": "/usr/bin/c++   -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/AntTweakBar-1.16/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.1.2/include/GLFW -I/home/yan/Workspace/cpp-game-engine/engine/external/glm-0.9.7.1 -I/home/yan/Workspace/cpp-game-engine/engine/external/glew-1.13.0/include -I/home/yan/Workspace/cpp-game-engine/engine/external/assimp-3.0.1270/include -I/home/yan/Workspace/cpp-game-engine/engine/external/bullet-2.81-rev2613/src -I/home/yan/Workspace/cpp-game-engine/engine/. -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -m64 -g   -std=gnu++11 -o CMakeFiles/engine.dir/src/Core/Engine.cpp.o -c /home/yan/Workspace/cpp-game-engine/engine/src/Core/Engine.cpp",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/src/Core/Engine.cpp"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine",
+  "command": "/usr/bin/c++   -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/AntTweakBar-1.16/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.1.2/include/GLFW -I/home/yan/Workspace/cpp-game-engine/engine/external/glm-0.9.7.1 -I/home/yan/Workspace/cpp-game-engine/engine/external/glew-1.13.0/include -I/home/yan/Workspace/cpp-game-engine/engine/external/assimp-3.0.1270/include -I/home/yan/Workspace/cpp-game-engine/engine/external/bullet-2.81-rev2613/src -I/home/yan/Workspace/cpp-game-engine/engine/. -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -m64 -g   -std=gnu++11 -o CMakeFiles/engine.dir/src/Core/Renderers/Renderer2D.cpp.o -c /home/yan/Workspace/cpp-game-engine/engine/src/Core/Renderers/Renderer2D.cpp",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/src/Core/Renderers/Renderer2D.cpp"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine",
+  "command": "/usr/bin/c++   -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/AntTweakBar-1.16/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.1.2/include/GLFW -I/home/yan/Workspace/cpp-game-engine/engine/external/glm-0.9.7.1 -I/home/yan/Workspace/cpp-game-engine/engine/external/glew-1.13.0/include -I/home/yan/Workspace/cpp-game-engine/engine/external/assimp-3.0.1270/include -I/home/yan/Workspace/cpp-game-engine/engine/external/bullet-2.81-rev2613/src -I/home/yan/Workspace/cpp-game-engine/engine/. -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -m64 -g   -std=gnu++11 -o CMakeFiles/engine.dir/src/Core/Renderers/Renderable2D.cpp.o -c /home/yan/Workspace/cpp-game-engine/engine/src/Core/Renderers/Renderable2D.cpp",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/src/Core/Renderers/Renderable2D.cpp"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine",
+  "command": "/usr/bin/c++   -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/AntTweakBar-1.16/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.1.2/include/GLFW -I/home/yan/Workspace/cpp-game-engine/engine/external/glm-0.9.7.1 -I/home/yan/Workspace/cpp-game-engine/engine/external/glew-1.13.0/include -I/home/yan/Workspace/cpp-game-engine/engine/external/assimp-3.0.1270/include -I/home/yan/Workspace/cpp-game-engine/engine/external/bullet-2.81-rev2613/src -I/home/yan/Workspace/cpp-game-engine/engine/. -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -m64 -g   -std=gnu++11 -o CMakeFiles/engine.dir/src/Core/Window.cpp.o -c /home/yan/Workspace/cpp-game-engine/engine/src/Core/Window.cpp",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/src/Core/Window.cpp"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine",
+  "command": "/usr/bin/c++   -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/AntTweakBar-1.16/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.1.2/include/GLFW -I/home/yan/Workspace/cpp-game-engine/engine/external/glm-0.9.7.1 -I/home/yan/Workspace/cpp-game-engine/engine/external/glew-1.13.0/include -I/home/yan/Workspace/cpp-game-engine/engine/external/assimp-3.0.1270/include -I/home/yan/Workspace/cpp-game-engine/engine/external/bullet-2.81-rev2613/src -I/home/yan/Workspace/cpp-game-engine/engine/. -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -m64 -g   -std=gnu++11 -o CMakeFiles/engine.dir/src/Modules/TestModule.cpp.o -c /home/yan/Workspace/cpp-game-engine/engine/src/Modules/TestModule.cpp",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/src/Modules/TestModule.cpp"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine",
+  "command": "/usr/bin/c++   -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/AntTweakBar-1.16/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.1.2/include/GLFW -I/home/yan/Workspace/cpp-game-engine/engine/external/glm-0.9.7.1 -I/home/yan/Workspace/cpp-game-engine/engine/external/glew-1.13.0/include -I/home/yan/Workspace/cpp-game-engine/engine/external/assimp-3.0.1270/include -I/home/yan/Workspace/cpp-game-engine/engine/external/bullet-2.81-rev2613/src -I/home/yan/Workspace/cpp-game-engine/engine/. -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -m64 -g   -std=gnu++11 -o CMakeFiles/engine.dir/src/Core/Loggers/ConsoleLogger.cpp.o -c /home/yan/Workspace/cpp-game-engine/engine/src/Core/Loggers/ConsoleLogger.cpp",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/src/Core/Loggers/ConsoleLogger.cpp"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine",
+  "command": "/usr/bin/c++   -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/AntTweakBar-1.16/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.1.2/include/GLFW -I/home/yan/Workspace/cpp-game-engine/engine/external/glm-0.9.7.1 -I/home/yan/Workspace/cpp-game-engine/engine/external/glew-1.13.0/include -I/home/yan/Workspace/cpp-game-engine/engine/external/assimp-3.0.1270/include -I/home/yan/Workspace/cpp-game-engine/engine/external/bullet-2.81-rev2613/src -I/home/yan/Workspace/cpp-game-engine/engine/. -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -m64 -g   -std=gnu++11 -o CMakeFiles/engine.dir/src/Core/Shader.cpp.o -c /home/yan/Workspace/cpp-game-engine/engine/src/Core/Shader.cpp",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/src/Core/Shader.cpp"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include/GLFW -I/home/yan/Workspace/cpp-game-engine/engine/external/glew-2.0.0/include  -g   -o CMakeFiles/GLEW_2000.dir/glew-2.0.0/src/glew.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glew-2.0.0/src/glew.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glew-2.0.0/src/glew.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/context.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/context.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/context.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/init.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/init.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/init.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/input.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/input.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/input.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/monitor.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/monitor.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/monitor.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/vulkan.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/vulkan.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/vulkan.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/window.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/window.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/window.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/x11_init.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/x11_init.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/x11_init.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/x11_monitor.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/x11_monitor.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/x11_monitor.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/x11_window.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/x11_window.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/x11_window.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/xkb_unicode.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/xkb_unicode.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/xkb_unicode.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/linux_joystick.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/linux_joystick.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/linux_joystick.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/posix_time.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/posix_time.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/posix_time.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/posix_tls.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/posix_tls.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/posix_tls.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/glx_context.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glx_context.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/glx_context.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src  -g -fPIC   -Wall -o CMakeFiles/glfw.dir/egl_context.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/egl_context.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/src/egl_context.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/boing.dir/boing.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/boing.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/boing.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/boing.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/gears.dir/gears.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/gears.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/gears.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/gears.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/heightmap.dir/heightmap.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/heightmap.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/heightmap.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/heightmap.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/particles.dir/particles.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/particles.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/particles.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/particles.dir/__/deps/tinycthread.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/tinycthread.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/tinycthread.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/particles.dir/__/deps/getopt.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/particles.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/wave.dir/wave.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/wave.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/wave.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/wave.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/simple.dir/simple.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/simple.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/simple.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/simple.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/splitview.dir/splitview.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/splitview.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples/splitview.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/examples",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/splitview.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/reopen.dir/reopen.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/reopen.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/reopen.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/reopen.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/joysticks.dir/joysticks.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/joysticks.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/joysticks.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/joysticks.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/monitors.dir/monitors.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/monitors.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/monitors.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/monitors.dir/__/deps/getopt.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/monitors.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/iconify.dir/iconify.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/iconify.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/iconify.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/iconify.dir/__/deps/getopt.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/iconify.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/glfwinfo.dir/glfwinfo.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/glfwinfo.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/glfwinfo.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/glfwinfo.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/empty.dir/empty.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/empty.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/empty.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/empty.dir/__/deps/tinycthread.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/tinycthread.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/tinycthread.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/empty.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/cursor.dir/cursor.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/cursor.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/cursor.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/cursor.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/threads.dir/threads.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/threads.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/threads.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/threads.dir/__/deps/tinycthread.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/tinycthread.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/tinycthread.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/threads.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/clipboard.dir/clipboard.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/clipboard.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/clipboard.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/clipboard.dir/__/deps/getopt.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/clipboard.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/title.dir/title.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/title.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/title.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/title.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/msaa.dir/msaa.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/msaa.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/msaa.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/msaa.dir/__/deps/getopt.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/msaa.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/events.dir/events.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/events.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/events.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/events.dir/__/deps/getopt.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/events.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/gamma.dir/gamma.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/gamma.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/gamma.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/gamma.dir/__/deps/getopt.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/gamma.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/icon.dir/icon.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/icon.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/icon.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/icon.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/tearing.dir/tearing.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/tearing.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/tearing.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/tearing.dir/__/deps/getopt.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/tearing.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/sharing.dir/sharing.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/sharing.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/sharing.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/sharing.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/windows.dir/windows.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/windows.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/windows.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/windows.dir/__/deps/getopt.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/getopt.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/windows.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/timeout.dir/timeout.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/timeout.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests/timeout.c"
+},
+{
+  "directory": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/tests",
+  "command": "/usr/bin/cc  -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps -I/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/include  -g   -o CMakeFiles/timeout.dir/__/deps/glad.c.o   -c /home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c",
+  "file": "/home/yan/Workspace/cpp-game-engine/engine/external/glfw-3.2.1/deps/glad.c"
+}
+]
