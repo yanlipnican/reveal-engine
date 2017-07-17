@@ -6,9 +6,9 @@
 
 #include <cstdio>
 
-namespace Engine::Util::FileUtil {
+namespace Engine { namespace Util { namespace FileUtil {
 
-    const char* loadFile(const char* filename) const {
+    const char* loadFile(const char* filename) {
         char *buffer;
         unsigned long length;
         FILE *file = fopen(filename, "rb");
@@ -26,4 +26,4 @@ namespace Engine::Util::FileUtil {
         return nullptr;
     }
 
-}
+}}}

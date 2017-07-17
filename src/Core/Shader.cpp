@@ -16,7 +16,7 @@ Shader::Shader(const char* vertex_filename, const char* fragment_filename) {
     GLuint vertex = compile(vertex_filename, GL_VERTEX_SHADER);
     GLuint fragment = compile(fragment_filename, GL_FRAGMENT_SHADER);
 
-    if (check(vertex) || check(fragment)) {
+    if (check(vertex, false) || check(fragment, false)) {
         glDeleteShader(vertex);
         glDeleteShader(fragment);
         return;
@@ -60,7 +60,7 @@ GLuint Shader::compile(const char* filename, GLenum type) {
     return id;
 }
 
-bool Shader::check(GLuint programID, bool isProgram = false) {
+bool Shader::check(GLuint programID, bool isProgram) {
     GLint compilation_result = GL_FALSE;
     int info_log_length;
 

@@ -17,7 +17,7 @@ namespace Engine { namespace Core {
         void bind();
     private:
         GLuint compile(const char* filename, GLenum type);
-        bool check(GLuint programID, bool isProgram = false);
+        bool check(GLuint programID, bool isProgram);
         void printError(std::string log);
     };
 
