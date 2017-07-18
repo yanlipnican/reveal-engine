@@ -16,7 +16,6 @@ namespace Engine { namespace Core {
         Engine* engine;
         Logger* logger;
     public:
-        Module(Engine* engine): engine(engine) {};
         virtual void init() = 0;
         virtual void update() = 0;
     };

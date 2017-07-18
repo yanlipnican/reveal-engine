@@ -3,8 +3,10 @@
 //
 
 #include <src/Core/Renderers/Renderer2D.h>
-#include <src/Modules/TestModule.h>
 #include <src/Core/Loggers/ConsoleLogger.h>
+#include <src/Modules/Renderer2DModule.h>
+#include "Module.h"
+#include "Window.h"
 
 using namespace Engine::Modules;
 
@@ -17,7 +19,7 @@ namespace Engine { namespace Core {
 
     Engine::Engine() {
         logger = new ConsoleLogger();
-        addModule(new TestModule(this), "TestModule");
+        addModule(new Renderer2DModule(), "Renderer2DModule");
         openWindow("Engine");
     }
 
