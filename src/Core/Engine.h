@@ -25,10 +25,8 @@ namespace Engine { namespace Core {
 
     class Engine {
     private:
-        typedef std::map<const char*, Renderer*, cmp_str> Renderers;
         typedef std::map<const char*, Module*, cmp_str> Modules;
         typedef std::map<const char*, Window*, cmp_str> Windows;
-        Renderers renderers;
         Modules modules;
         Windows windows;
         Logger* logger;
@@ -36,16 +34,13 @@ namespace Engine { namespace Core {
         Engine();
         ~Engine();
         void start();
-        void addRenderer(Renderer* renderer, const char* name);
         void addModule(Module* module, const char* name);
         void openWindow(const char* name);
         void closeWindow(const char* name);
         Window* getWindow(const char* name);
-        Renderer* getRenderer(const char* name);
         Module* getModule(const char* name);
         Logger* getLogger();
     private:
-        void iterateRenderers(void (*fun)(Renderer*));
         void iterateModules(void (*fun)(Module*));
         void iterateWindows(void (*fun)(Window*));
         bool isRunning();
