@@ -11,6 +11,8 @@
 #include "Module.h"
 #include "Logger.h"
 
+#include "src/OpenGL.h"
+
 namespace Engine { namespace Core {
 
     class Module;
@@ -29,21 +31,21 @@ namespace Engine { namespace Core {
         typedef std::map<const char*, Window*, cmp_str> Windows;
         Modules modules;
         Windows windows;
-        Logger* logger;
+        bool setupGL();
     public:
         Engine();
         ~Engine();
         void start();
         void addModule(Module* module, const char* name);
-        void openWindow(const char* name);
+        Window * openWindow(const char *name);
         void closeWindow(const char* name);
         Window* getWindow(const char* name);
         Module* getModule(const char* name);
-        Logger* getLogger();
     private:
         void iterateModules(void (*fun)(Module*));
         void iterateWindows(void (*fun)(Window*));
         bool isRunning();
+        bool closeWindows();
     };
 
 } }

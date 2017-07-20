@@ -34,12 +34,9 @@ endif(INCLUDE_DISTRIB)
 
 
 include_directories(
-        external/AntTweakBar-1.16/include/
         external/glfw-3.1.2/include/GLFW/
         external/glm-0.9.7.1/
         external/glew-1.13.0/include/
-        external/assimp-3.0.1270/include/
-        external/bullet-2.81-rev2613/src/
         .
 )
 
@@ -59,7 +56,7 @@ add_definitions(
 
 set(SOURCE_FILES
         main.cpp
-        src/Core/Engine.cpp src/Core/Engine.h src/Core/Renderer.h src/Util/Util.h src/Util/FileUtil.h src/Core/Renderers/Renderer2D.cpp src/Core/Renderers/Renderer2D.h src/Core/Renderers/Renderable2D.cpp src/Core/Renderers/Renderable2D.h src/Core/Window.cpp src/Core/Window.h src/Core/Module.h src/Core/Logger.h src/Core/Loggers/ConsoleLogger.cpp src/Core/Loggers/ConsoleLogger.h src/Core/Shader.cpp src/Core/Shader.h src/Modules/Renderer2DModule.cpp src/Modules/Renderer2DModule.h )
+        src/Core/Engine.cpp src/Core/Engine.h src/Core/Renderer.h src/Util/Util.h src/Util/FileUtil.h src/Core/Renderers/Renderer2D.cpp src/Core/Renderers/Renderer2D.h src/Core/Renderers/Renderable2D.cpp src/Core/Renderers/Renderable2D.h src/Core/Window.cpp src/Core/Window.h src/Core/Module.h src/Core/Logger.h src/Core/Loggers/ConsoleLogger.cpp src/Core/Loggers/ConsoleLogger.h src/Core/Shader.cpp src/Core/Shader.h src/Modules/Renderer2DModule.cpp src/Modules/Renderer2DModule.h src/OpenGL.h)
 
 set (CMAKE_CXX_FLAGS -m64)
 

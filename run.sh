@@ -10,7 +10,7 @@ if [ $1 = "prepare" ]; then
 elif [ $1 = "build" ]; then
     make -C $DIR_NAME
 elif [ $1 = "valgrind" ]; then
-    valgrind ${DIR_NAME}/${BIN_DIR}/${BIN_NAME}
+    valgrind ${DIR_NAME}/${BIN_DIR}/${BIN_NAME} --leak-check=full --show-reachable=yes
 elif [ $1 = "start" ]; then
     ${DIR_NAME}/${BIN_DIR}/${BIN_NAME}
 fi

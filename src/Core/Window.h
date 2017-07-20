@@ -6,13 +6,21 @@
 
 #include <string>
 
+#include "src/OpenGL.h"
+
 namespace Engine { namespace Core {
 
     class Window {
+    private:
+        GLFWwindow* window;
     public:
-        Window(std::string title);
+        Window(const char* title);
         ~Window();
+        void bind();
+        void pollEvents();
         bool shouldClose();
+
+        void close();
     };
 
 } }
