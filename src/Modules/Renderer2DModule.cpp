@@ -6,12 +6,8 @@
 
 using namespace Engine::Modules;
 
-Renderer2DModule::Renderer2DModule() {
-
-}
-
 void Renderer2DModule::init() {
-
+    renderer = new Renderer2D();
 }
 
 void Renderer2DModule::update() {

@@ -19,7 +19,7 @@ namespace Engine { namespace Core {
 
     Engine::Engine() {
         logger = new ConsoleLogger();
-        addModule(new Renderer2DModule(), "Renderer2DModule");
+        addModule(new Renderer2DModule(this), "Renderer2D");
         openWindow("Engine");
     }
 
