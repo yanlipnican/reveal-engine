@@ -16,6 +16,17 @@ namespace Engine { namespace Core {
         typedef std::vector<Renderable2D*> Queue;
         Queue queue;
         Shader* shader;
+        GLuint vao;
+        std::vector<GLuint> vbos;
+        const float quad[18] = {
+                -1.0f, -1.0f, 0.0f,
+                1.0f, -1.0f, 0.0f,
+                1.0f,  1.0f, 0.0f,
+                //
+                1.0f,  1.0f, 0.0f,
+                -1.0f, 1.0f, 0.0f,
+                -1.0f, -1.0f, 0.0f
+        };
     public:
         Renderer2D();
         ~Renderer2D();
@@ -23,6 +34,8 @@ namespace Engine { namespace Core {
         void submit(Renderable2D* object);
     private:
         void sortQueue();
+
+        void loadBuffers();
     };
 
 } }
