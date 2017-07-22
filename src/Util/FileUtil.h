@@ -21,6 +21,8 @@ namespace Engine { namespace Util { namespace FileUtil {
             fread(buffer, 1, length, file);
             fclose(file);
             return buffer;
+        } else {
+            std::cout << "couldnt open file " << filename << std::endl;
         }
 
         return nullptr;

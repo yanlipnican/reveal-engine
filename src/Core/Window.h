@@ -18,8 +18,9 @@ namespace Engine { namespace Core {
         ~Window();
         void bind();
         void pollEvents();
+        void swapBuffers();
         bool shouldClose();
-
+        GLFWwindow* getWindow();
         void close();
     };
 

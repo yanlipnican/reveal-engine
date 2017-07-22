@@ -12,11 +12,11 @@ namespace Engine { namespace Core {
 
     class Renderer2D: public Renderer {
     private:
-        typedef std::vector<Renderable2D> Queue;
+        typedef std::vector<Renderable2D*> Queue;
         Queue queue;
     public:
         void flush() override;
-        void submit(Renderable2D object);
+        void submit(Renderable2D* object);
     private:
         void sortQueue();
     };

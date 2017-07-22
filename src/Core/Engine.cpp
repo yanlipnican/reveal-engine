@@ -39,9 +39,13 @@ namespace Engine { namespace Core {
 
     void Engine::start() {
         iterateModules(initModule);
-        Window* window = openWindow("Engine");
+        Window* window = getWindow("Engine");
+        window->bind();
+        glClearColor(0.2f, 0.2f, 0.3f, 0.0f);
         while (isRunning()) {
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
             iterateModules(updateModule);
+            window->swapBuffers();
             window->pollEvents();
         }
     }
@@ -85,7 +89,8 @@ namespace Engine { namespace Core {
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // To make MacOS happy; should not be needed
         glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); // We don't want the old OpenGL
-
+        Window* window = openWindow("Engine");
+        glfwMakeContextCurrent(window->getWindow());
         glewExperimental=true;
         if (glewInit() != GLEW_OK) {
             return false;

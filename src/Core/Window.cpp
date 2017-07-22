@@ -27,3 +27,11 @@ bool Engine::Core::Window::shouldClose() {
 void Engine::Core::Window::close() {
     glfwDestroyWindow(window);
 }
+
+void Engine::Core::Window::swapBuffers() {
+    glfwSwapBuffers(window);
+}
+
+GLFWwindow* Engine::Core::Window::getWindow() {
+    return window;
+}

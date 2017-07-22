@@ -19,6 +19,7 @@ Shader::Shader(const char* vertex_filename, const char* fragment_filename) {
     if (check(vertex, false) || check(fragment, false)) {
         glDeleteShader(vertex);
         glDeleteShader(fragment);
+        printError("LOL1");
         return;
     }
 
@@ -36,6 +37,7 @@ Shader::Shader(const char* vertex_filename, const char* fragment_filename) {
 
     if (check(id, true)) {
         glDeleteProgram(id);
+        printError("LOL2");
     }
 
 }
@@ -52,12 +54,16 @@ GLuint Shader::compile(const char* filename, GLenum type) {
     GLuint shaderId = glCreateShader(type);
     const char* src = FileUtil::loadFile(filename);
 
-    glShaderSource(shaderId, 1, (const GLchar* const *)src , NULL);
+    if (src == nullptr) {
+        return 0;
+    }
+
+    glShaderSource(shaderId, 1, &src , NULL);
     glCompileShader(shaderId);
 
     delete[] src;
 
-    return id;
+    return shaderId;
 }
 
 bool Shader::check(GLuint programID, bool isProgram) {
