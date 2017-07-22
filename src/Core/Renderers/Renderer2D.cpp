@@ -4,12 +4,22 @@
 
 #include <GL/glew.h>
 #include <iostream>
+#include <src/Core/Shader.h>
 #include "Renderer2D.h"
 
 using namespace Engine::Core;
 
+Renderer2D::Renderer2D() {
+    shader = new Shader("../shaders/2Dshader.vert", "../shaders/2Dshader.frag");
+}
+
+Renderer2D::~Renderer2D() {
+    delete shader;
+}
+
 void Renderer2D::flush() {
 
+    shader->bind();
     GLuint VertexArrayID;
     glGenVertexArrays(1, &VertexArrayID);
     static const GLfloat quad_vertices[] = {
@@ -77,3 +87,4 @@ void Renderer2D::submit(Engine::Core::Renderable2D* object) {
 void Renderer2D::sortQueue() {
 
 }
+
