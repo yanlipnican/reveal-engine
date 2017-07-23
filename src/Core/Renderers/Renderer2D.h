@@ -8,16 +8,21 @@
 #include "src/Core/Shader.h"
 #include <vector>
 #include "Renderable2D.h"
+#include <functional>
 
 namespace Engine { namespace Core {
 
     class Renderer2D: public Renderer {
     private:
         typedef std::vector<Renderable2D*> Queue;
+        struct vbo {
+            GLuint id;
+            std::function<void()> onData;
+        };
         Queue queue;
         Shader* shader;
         GLuint vao;
-        std::vector<GLuint> vbos;
+        std::vector<vbo> vbos;
         const float quad[18] = {
                 -1.0f, -1.0f, 0.0f,
                 1.0f, -1.0f, 0.0f,
@@ -36,6 +41,11 @@ namespace Engine { namespace Core {
         void sortQueue();
 
         void loadBuffers();
+
+        void addVertexBuffer(uint location, uint size, uint stride, std::function<void()> onData);
+
+        void addVertexBuffer(uint location, uint size, uint stride, uint attrib_divisor, std::function<void()> onData);
+
     };
 
 } }

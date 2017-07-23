@@ -5,27 +5,31 @@
 #include <GL/glew.h>
 #include <iostream>
 #include <src/Core/Shader.h>
+#include <functional>
 #include "Renderer2D.h"
+
+#include "glm/gtc/matrix_transform.hpp"
 
 using namespace Engine::Core;
 
 Renderer2D::Renderer2D() {
+
     shader = new Shader("../shaders/2Dshader.vert", "../shaders/2Dshader.frag");
     glGenVertexArrays(1, &vao);
     glBindVertexArray(vao);
 
-    GLuint vertexBuffer;
-    glGenBuffers(1, &vertexBuffer);
-    glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
-    vbos.push_back(vertexBuffer);
+    addVertexBuffer(0, 3, 0, [this](){
+        glBufferData(GL_ARRAY_BUFFER, sizeof(quad), quad, GL_STATIC_DRAW);
+    });
 
-    GLuint colorBuffer;
-    glGenBuffers(1, &colorBuffer);
-    glBindBuffer(GL_ARRAY_BUFFER, colorBuffer);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-    glVertexAttribDivisor(1, 1);
-    vbos.push_back(colorBuffer);
+    addVertexBuffer(1, 3, 3* sizeof(float), 1, [this](){
+        glm::vec3* colorArray = new glm::vec3[queue.size()];
+        for (uint i = 0; i < queue.size(); i++) {
+            colorArray[i] = queue[i]->getColor();
+        }
+        glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3) * queue.size(), &colorArray[0], GL_STATIC_DRAW);
+        delete[] colorArray;
+    });
 
     glBindVertexArray(0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -34,7 +38,20 @@ Renderer2D::Renderer2D() {
 
 Renderer2D::~Renderer2D() {
     delete shader;
-    delete[] quad;
+}
+
+void Renderer2D::addVertexBuffer(uint location, uint size, uint stride, std::function<void()> onData) {
+    vbo v;
+    v.onData = onData;
+    glGenBuffers(1, &v.id);
+    glBindBuffer(GL_ARRAY_BUFFER, v.id);
+    glVertexAttribPointer(location, size, GL_FLOAT, GL_FALSE, stride, (void*)0);
+    vbos.push_back(v);
+}
+
+void Renderer2D::addVertexBuffer(uint location, uint size, uint stride, uint attrib_divisor, std::function<void()> onData) {
+    addVertexBuffer(location, size, stride, onData);
+    glVertexAttribDivisor(location, attrib_divisor);
 }
 
 void Renderer2D::flush() {
@@ -45,31 +62,21 @@ void Renderer2D::flush() {
     glDrawArraysInstanced(GL_TRIANGLES, 0, 6, (int)queue.size());
     queue.clear();
 
-    glDisableVertexAttribArray(0);
-    glDisableVertexAttribArray(1);
+    for (uint i = 0 ; i < vbos.size(); i++) {
+        glDisableVertexAttribArray(i);
+    }
     glUseProgram(0);
-    glBindBuffer(GL_VERTEX_ARRAY, 0);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
 
 }
 
 void Renderer2D::loadBuffers() {
-
-    // load vertices
-    glBindBuffer(GL_ARRAY_BUFFER, vbos[0]);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(quad), quad, GL_STATIC_DRAW);
-    glEnableVertexAttribArray(0);
-
-    // load colors
-    glm::vec3 colorArray[queue.size()];
-    for (uint i = 0; i < queue.size(); i++) {
-        colorArray[i] = queue[i]->getColor();
+    for (uint i = 0; i < vbos.size(); i++) {
+        glBindBuffer(GL_ARRAY_BUFFER, vbos[i].id);
+        vbos[i].onData();
+        glEnableVertexAttribArray(i);
     }
-
-    glBindBuffer(GL_ARRAY_BUFFER, vbos[1]);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3) * queue.size(), &colorArray[0], GL_STATIC_DRAW);
-    glEnableVertexAttribArray(1);
-
 }
 
 void Renderer2D::submit(Engine::Core::Renderable2D* object) {

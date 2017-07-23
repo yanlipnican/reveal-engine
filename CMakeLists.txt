@@ -58,7 +58,7 @@ set(SOURCE_FILES
         main.cpp
         src/Core/Engine.cpp src/Core/Engine.h src/Core/Renderer.h src/Util/Util.h src/Util/FileUtil.h src/Core/Renderers/Renderer2D.cpp src/Core/Renderers/Renderer2D.h src/Core/Renderers/Renderable2D.cpp src/Core/Renderers/Renderable2D.h src/Core/Window.cpp src/Core/Window.h src/Core/Module.h src/Core/Logger.h src/Core/Loggers/ConsoleLogger.cpp src/Core/Loggers/ConsoleLogger.h src/Core/Shader.cpp src/Core/Shader.h src/Modules/Renderer2DModule.cpp src/Modules/Renderer2DModule.h src/OpenGL.h)
 
-set (CMAKE_CXX_FLAGS -m64)
+set (CMAKE_CXX_FLAGS "-m64 -Wall -Wextra -pedantic")
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 

@@ -95,6 +95,7 @@ namespace Engine { namespace Core {
         if (glewInit() != GLEW_OK) {
             return false;
         }
+        return true;
     }
 
         bool Engine::closeWindows() {

@@ -10,7 +10,7 @@ Renderable2D test;
 
 void Renderer2DModule::init() {
     renderer = new Renderer2D();
-    test.setColor(glm::vec3(1, 0, 0));
+    test.setColor(glm::vec3(.4, .5, 0));
 }
 
 void Renderer2DModule::update() {

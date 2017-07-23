@@ -82,7 +82,7 @@ bool Shader::check(GLuint programID, bool isProgram) {
         std::vector<char> VertexShaderErrorMessage(info_log_length + 1);
         glGetShaderInfoLog(programID, info_log_length, NULL, &VertexShaderErrorMessage[0]);
         std::stringstream stream;
-        for(int i = 0; i < VertexShaderErrorMessage.size(); i++) {
+        for(uint i = 0; i < VertexShaderErrorMessage.size(); i++) {
             stream << VertexShaderErrorMessage[i];
         }
         printError(stream.str());
