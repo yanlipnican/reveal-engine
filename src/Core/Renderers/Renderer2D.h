@@ -17,6 +17,7 @@ namespace Engine { namespace Core {
         typedef std::vector<Renderable2D*> Queue;
         struct vbo {
             GLuint id;
+            GLuint attrib_location;
             std::function<void()> onData;
         };
         Queue queue;
@@ -42,9 +43,9 @@ namespace Engine { namespace Core {
 
         void loadBuffers();
 
-        uint addVertexBuffer(uint size, uint stride, std::function<void()> onData);
+        uint addVertexBuffer(const char* attrib, uint size, uint stride, std::function<void()> onData);
 
-        uint addVertexBuffer(uint size, uint stride, uint attrib_divisor, std::function<void()> onData);
+        uint addVertexBuffer(const char* attrib, uint size, uint stride, uint attrib_divisor, std::function<void()> onData);
 
     };
 

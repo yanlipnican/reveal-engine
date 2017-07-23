@@ -5,6 +5,7 @@
 #include <vector>
 #include <sstream>
 #include <iostream>
+#include <cstring>
 #include "Shader.h"
 #include "src/Util/Util.h"
 
@@ -57,8 +58,8 @@ GLuint Shader::compile(const char* filename, GLenum type) {
     if (src == nullptr) {
         return 0;
     }
-
-    glShaderSource(shaderId, 1, &src , NULL);
+    int length = (int)strlen(src);
+    glShaderSource(shaderId, 1, &src , &length);
     glCompileShader(shaderId);
 
     delete[] src;
@@ -100,9 +101,16 @@ void Shader::setMat4fUniform(const char *uniform, glm::mat4 matrix) {
     glUniformMatrix4fv(getUniformLocation(uniform), 1, GL_FALSE, &matrix[0][0]);
 }
 
-int Shader::getUniformLocation(const char *uniform) {
-    if (uniform_locations.count(uniform)) {
-        uniform_locations[uniform] = glGetUniformLocation(id, uniform);
+GLuint Shader::getUniformLocation(const char *uniform) {
+    if (shader_locations.count(uniform)) {
+        shader_locations[uniform] = glGetUniformLocation(id, uniform);
     }
-    return uniform_locations[uniform];
+    return shader_locations[uniform];
+}
+
+GLuint Shader::getAttribLocation(const char *attrib) {
+    if (shader_locations.count(attrib)) {
+        shader_locations[attrib] = glGetAttribLocation(id, attrib);
+    }
+    return shader_locations[attrib];
 }
