@@ -13,8 +13,8 @@ using namespace Engine::Modules;
 
 namespace Engine { namespace Core {
 
-    inline void initModule(Module* module) {module->init();}
-    inline void updateModule(Module* module) {module->update();}
+    static inline void initModule(Module* module) {module->init();}
+    static inline void updateModule(Module* module) {module->update();}
 
     Engine::Engine() {
         setupGL();

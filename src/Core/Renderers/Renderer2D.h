@@ -18,6 +18,7 @@ namespace Engine { namespace Core {
         struct vbo {
             GLuint id;
             GLuint attrib_location;
+            uint length;
             std::function<void()> onData;
         };
         Queue queue;
@@ -43,9 +44,9 @@ namespace Engine { namespace Core {
 
         void loadBuffers();
 
-        uint addVertexBuffer(const char* attrib, uint size, uint stride, std::function<void()> onData);
+        uint addVertexBuffer(const char* attrib, uint size, uint stride, uint length, uint offset, std::function<void()> onData);
 
-        uint addVertexBuffer(const char* attrib, uint size, uint stride, uint attrib_divisor, std::function<void()> onData);
+        uint addVertexBuffer(const char* attrib, uint size, uint stride, uint attrib_divisor, uint length, uint offset, std::function<void()> onData);
 
     };
 

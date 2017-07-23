@@ -12,7 +12,7 @@ namespace Engine { namespace Core {
     public:
     private:
         glm::vec3 color = glm::vec3(0, 0, 0);
-        glm::mat4 model_matrix = glm::mat4(1.0f);
+        glm::mat4 model_matrix = glm::mat4(1);
     public:
         void setColor(glm::vec3 color);
         void translate(glm::vec3 vector);

@@ -102,14 +102,14 @@ void Shader::setMat4fUniform(const char *uniform, glm::mat4 matrix) {
 }
 
 GLuint Shader::getUniformLocation(const char *uniform) {
-    if (shader_locations.count(uniform)) {
+    if (!shader_locations.count(uniform)) {
         shader_locations[uniform] = glGetUniformLocation(id, uniform);
     }
     return shader_locations[uniform];
 }
 
 GLuint Shader::getAttribLocation(const char *attrib) {
-    if (shader_locations.count(attrib)) {
+    if (!shader_locations.count(attrib)) {
         shader_locations[attrib] = glGetAttribLocation(id, attrib);
     }
     return shader_locations[attrib];

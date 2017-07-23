@@ -18,6 +18,8 @@ namespace Engine { namespace Core {
         void setView(glm::mat4 matrix);
         void setProjection(glm::mat4 matrix);
         glm::mat4 getMatrix();
+        glm::mat4 getView();
+        glm::mat4 getProjection();
     };
 }}
 

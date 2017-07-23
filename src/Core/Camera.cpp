@@ -21,3 +21,11 @@ void Engine::Core::Camera::setProjection(glm::mat4 matrix) {
     projection = matrix;
 }
 
+glm::mat4 Engine::Core::Camera::getProjection() {
+    return projection;
+}
+
+glm::mat4 Engine::Core::Camera::getView() {
+    return view;
+}
+
