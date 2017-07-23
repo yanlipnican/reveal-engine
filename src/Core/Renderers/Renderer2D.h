@@ -35,7 +35,7 @@ namespace Engine { namespace Core {
     public:
         Renderer2D();
         ~Renderer2D();
-        void flush() override;
+        void flush(Camera camera) override;
         void submit(Renderable2D* object);
     private:
         void sortQueue();

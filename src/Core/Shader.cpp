@@ -95,3 +95,14 @@ bool Shader::check(GLuint programID, bool isProgram) {
 void Shader::printError(std::string log) {
     std::cout << log << std::endl;
 }
+
+void Shader::setMat4fUniform(const char *uniform, glm::mat4 matrix) {
+    glUniformMatrix4fv(getUniformLocation(uniform), 1, GL_FALSE, &matrix[0][0]);
+}
+
+int Shader::getUniformLocation(const char *uniform) {
+    if (uniform_locations.count(uniform)) {
+        uniform_locations[uniform] = glGetUniformLocation(id, uniform);
+    }
+    return uniform_locations[uniform];
+}

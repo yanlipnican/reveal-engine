@@ -4,12 +4,14 @@
 
 #pragma once
 
+#include "Camera.h"
+
 namespace Engine {
     namespace Core {
 
         class Renderer {
         public:
-            virtual void flush() = 0;
+            virtual void flush(Camera camera) = 0;
         };
 
     }

@@ -7,6 +7,7 @@
 using namespace Engine::Modules;
 
 Renderable2D test;
+Camera cam = Camera(45, 16, 9, .1f, 100.0f);
 
 void Renderer2DModule::init() {
     renderer = new Renderer2D();
@@ -15,6 +16,6 @@ void Renderer2DModule::init() {
 
 void Renderer2DModule::update() {
     renderer->submit(&test);
-    renderer->flush();
+    renderer->flush(cam);
 }
 

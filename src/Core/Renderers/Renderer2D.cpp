@@ -6,6 +6,7 @@
 #include <iostream>
 #include <src/Core/Shader.h>
 #include <functional>
+#include <src/Core/Camera.h>
 #include "Renderer2D.h"
 
 #include "glm/gtc/matrix_transform.hpp"
@@ -20,6 +21,15 @@ Renderer2D::Renderer2D() {
 
     addVertexBuffer(3, 0, [this](){
         glBufferData(GL_ARRAY_BUFFER, sizeof(quad), quad, GL_STATIC_DRAW);
+    });
+
+    addVertexBuffer(16, 16* sizeof(float), 1, [this](){
+        glm::mat4* arr = new glm::mat4[queue.size()];
+        for (uint i = 0; i < queue.size(); i++) {
+            arr[i] = queue[i]->getModelMatrix();
+        }
+        glBufferData(GL_ARRAY_BUFFER, sizeof(glm::mat4) * queue.size(), &arr[0], GL_STATIC_DRAW);
+        delete[] arr;
     });
 
     addVertexBuffer(3, 3* sizeof(float), 1, [this](){
@@ -57,9 +67,10 @@ uint Renderer2D::addVertexBuffer(uint size, uint stride, uint attrib_divisor, st
     return location;
 }
 
-void Renderer2D::flush() {
+void Renderer2D::flush(Camera camera) {
 
     shader->bind();
+    shader->setMat4fUniform("camera", camera.getMatrix());
     glBindVertexArray(vao);
     loadBuffers();
     glDrawArraysInstanced(GL_TRIANGLES, 0, 6, (int)queue.size());
