@@ -18,11 +18,11 @@ Renderer2D::Renderer2D() {
     glGenVertexArrays(1, &vao);
     glBindVertexArray(vao);
 
-    addVertexBuffer(0, 3, 0, [this](){
+    addVertexBuffer(3, 0, [this](){
         glBufferData(GL_ARRAY_BUFFER, sizeof(quad), quad, GL_STATIC_DRAW);
     });
 
-    addVertexBuffer(1, 3, 3* sizeof(float), 1, [this](){
+    addVertexBuffer(3, 3* sizeof(float), 1, [this](){
         glm::vec3* colorArray = new glm::vec3[queue.size()];
         for (uint i = 0; i < queue.size(); i++) {
             colorArray[i] = queue[i]->getColor();
@@ -40,18 +40,21 @@ Renderer2D::~Renderer2D() {
     delete shader;
 }
 
-void Renderer2D::addVertexBuffer(uint location, uint size, uint stride, std::function<void()> onData) {
+uint Renderer2D::addVertexBuffer(uint size, uint stride, std::function<void()> onData) {
     vbo v;
     v.onData = onData;
+    uint location = (uint)vbos.size();
     glGenBuffers(1, &v.id);
     glBindBuffer(GL_ARRAY_BUFFER, v.id);
     glVertexAttribPointer(location, size, GL_FLOAT, GL_FALSE, stride, (void*)0);
     vbos.push_back(v);
+    return location;
 }
 
-void Renderer2D::addVertexBuffer(uint location, uint size, uint stride, uint attrib_divisor, std::function<void()> onData) {
-    addVertexBuffer(location, size, stride, onData);
+uint Renderer2D::addVertexBuffer(uint size, uint stride, uint attrib_divisor, std::function<void()> onData) {
+    uint location = addVertexBuffer(size, stride, onData);
     glVertexAttribDivisor(location, attrib_divisor);
+    return location;
 }
 
 void Renderer2D::flush() {

@@ -42,9 +42,9 @@ namespace Engine { namespace Core {
 
         void loadBuffers();
 
-        void addVertexBuffer(uint location, uint size, uint stride, std::function<void()> onData);
+        uint addVertexBuffer(uint size, uint stride, std::function<void()> onData);
 
-        void addVertexBuffer(uint location, uint size, uint stride, uint attrib_divisor, std::function<void()> onData);
+        uint addVertexBuffer(uint size, uint stride, uint attrib_divisor, std::function<void()> onData);
 
     };
 
