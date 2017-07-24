@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/yanlipnican/cpp-game-engine.svg?branch=master)](https://travis-ci.org/yanlipnican/cpp-game-engine)
 
+## Current state
+
+Currently i am working on high speed 2D instanced renderer for 2D games and UI.
+
 ## Development
 
 ### Build and run project
