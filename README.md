@@ -4,9 +4,7 @@
 
 ## Development
 
-Project uses cmake.
-
-### Run project
+### Build and run project
 1. run ```./run deps``` - installs dependecies
 2. run ```./run prepare``` - compiles cmake project
 3. run ```./run build```
