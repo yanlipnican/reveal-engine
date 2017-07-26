@@ -12,7 +12,6 @@ Engine is not ready for production use yet. Currently i am working on high speed
   * 2D sprite animation
   * Sound
   * Scripting
-* Far
   * 3D rendering
 * Ultra-far
   * Visual tools for engine (Scene editor, lights, scripts, etc.)
