@@ -18,6 +18,8 @@ Engine is not ready for production use yet. Currently i am working on high speed
 
 ## Development
 
+I am developing under Linux (Ubuntu 16.04). Currently MacOS build is not working due some namespace errors and Windows is not tested yet.
+
 ### Build and run project
 1. run ```./run deps``` - installs dependecies
 2. run ```./run prepare``` - compiles cmake project
