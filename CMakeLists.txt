@@ -34,6 +34,7 @@ endif(INCLUDE_DISTRIB)
 
 
 include_directories(
+        external
         external/glfw-3.2.1/include/GLFW/
         external/glm/
         external/glew-2.0.0/include/
@@ -56,7 +57,7 @@ add_definitions(
 
 set(SOURCE_FILES
         main.cpp
-        src/Core/Engine.cpp src/Core/Engine.h src/Core/Renderer.h src/Util/Util.h src/Util/FileUtil.h src/Core/Renderers/Renderer2D.cpp src/Core/Renderers/Renderer2D.h src/Core/Renderers/Renderable2D.cpp src/Core/Renderers/Renderable2D.h src/Core/Window.cpp src/Core/Window.h src/Core/Module.h src/Core/Logger.h src/Core/Loggers/ConsoleLogger.cpp src/Core/Loggers/ConsoleLogger.h src/Core/Shader.cpp src/Core/Shader.h src/Modules/Renderer2DModule.cpp src/Modules/Renderer2DModule.h src/OpenGL.h src/Core/Camera.cpp src/Core/Camera.h)
+        src/Core/Engine.cpp src/Core/Engine.h src/Core/Modules/Graphics/Renderer.h src/Util/FileUtil.h src/Core/Modules/Graphics/Renderer2D.cpp src/Core/Modules/Graphics/Renderer2D.h src/Core/Modules/Graphics/Renderable2D.cpp src/Core/Modules/Graphics/Renderable2D.h src/Core/Window.cpp src/Core/Window.h src/Core/Module.h src/Core/Logger.h src/Core/Loggers/ConsoleLogger.cpp src/Core/Loggers/ConsoleLogger.h src/Core/Shader.cpp src/Core/Shader.h src/Core/Modules/Graphics/Renderer2DModule.cpp src/Core/Modules/Graphics/Renderer2DModule.h src/OpenGL.h src/Core/Modules/Graphics/Camera.cpp src/Core/Modules/Graphics/Camera.h src/Core/Modules/Timing.cpp src/Core/Modules/Timing.h src/Util/TimeUtil.h src/Core/Modules/Graphics/Texture.cpp src/Core/Modules/Graphics/Texture.h)
 
 set (CMAKE_CXX_FLAGS "-m64 -Wall -Wextra -pedantic")
 

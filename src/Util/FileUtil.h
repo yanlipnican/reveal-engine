@@ -5,6 +5,7 @@
 #pragma once
 
 #include <cstdio>
+#include <iostream>
 
 namespace Engine { namespace Util { namespace FileUtil {
 

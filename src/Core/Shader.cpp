@@ -7,7 +7,7 @@
 #include <iostream>
 #include <cstring>
 #include "Shader.h"
-#include "src/Util/Util.h"
+#include "src/Util/FileUtil.h"
 
 using namespace Engine::Util;
 using namespace Engine::Core;
@@ -79,7 +79,7 @@ bool Shader::check(GLuint programID, bool isProgram) {
         glGetShaderiv(programID, GL_INFO_LOG_LENGTH, &info_log_length);
     }
 
-    if ( info_log_length> 0 ){
+    if ( info_log_length > 0 ){
         std::vector<char> VertexShaderErrorMessage(info_log_length + 1);
         glGetShaderInfoLog(programID, info_log_length, NULL, &VertexShaderErrorMessage[0]);
         std::stringstream stream;

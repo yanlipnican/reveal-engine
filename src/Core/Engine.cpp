@@ -2,10 +2,10 @@
 // Created by yan on 15.7.17.
 //
 
-#include <src/Core/Renderers/Renderer2D.h>
 #include <src/Core/Loggers/ConsoleLogger.h>
-#include <src/Modules/Renderer2DModule.h>
+#include <src/Core/Modules/Graphics/Renderer2DModule.h>
 #include <iostream>
+#include <src/Core/Modules/Timing.h>
 #include "Module.h"
 #include "Window.h"
 
@@ -18,7 +18,9 @@ namespace Engine { namespace Core {
 
     Engine::Engine() {
         setupGL();
+        // core modules
         addModule(new Renderer2DModule(this), "Renderer2D");
+        addModule(new Timing(this), "Timing");
     }
 
     Engine::~Engine() {

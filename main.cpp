@@ -3,7 +3,8 @@
 
 using namespace Engine;
 
-int main() {
+int main(int argc, char** argv) {
+    std::cout << argv[0] << std::endl;
     Core::Engine engine;
     engine.start();
 
