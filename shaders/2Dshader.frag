@@ -1,7 +1,12 @@
 #version 410 core
-out vec3 color;
+out vec4 color;
 in vec3 fcolor;
+in vec2 texCord;
+in float textureId;
+
+uniform sampler2D textures[31];
 
 void main(){
-    color = fcolor;
+    highp int id = int(textureId);
+    color = texture(textures[id], texCord);
 }

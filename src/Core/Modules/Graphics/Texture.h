@@ -3,6 +3,8 @@
 //
 
 #pragma once
+
+#include <src/OpenGL.h>
 namespace Engine { namespace Core {
 
     class Texture {
@@ -12,9 +14,11 @@ namespace Engine { namespace Core {
         int m_comp;
         const char* m_filename;
         unsigned char* m_image;
+        GLuint m_id;
     public:
         Texture(const char* filename);
         ~Texture();
+        GLuint getId();
     };
 
 }}

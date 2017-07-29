@@ -14,17 +14,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/out)
 
 find_package(OpenGL REQUIRED)
 
-if( CMAKE_BINARY_DIR STREQUAL CMAKE_SOURCE_DIR )
-    message( FATAL_ERROR "Please select another Build Directory ! (and give it a clever name, like bin_Visual2012_64bits/)" )
-endif()
-if( CMAKE_SOURCE_DIR MATCHES " " )
-    message( "Your Source Directory contains spaces. If you experience problems when compiling, this can be the cause." )
-endif()
-if( CMAKE_BINARY_DIR MATCHES " " )
-    message( "Your Build Directory contains spaces. If you experience problems when compiling, this can be the cause." )
-endif()
-
-
 # Compile external dependencies
 add_subdirectory (external)
 
@@ -57,7 +46,7 @@ add_definitions(
 
 set(SOURCE_FILES
         main.cpp
-        src/Core/Engine.cpp src/Core/Engine.h src/Core/Modules/Graphics/Renderer.h src/Util/FileUtil.h src/Core/Modules/Graphics/Renderer2D.cpp src/Core/Modules/Graphics/Renderer2D.h src/Core/Modules/Graphics/Renderable2D.cpp src/Core/Modules/Graphics/Renderable2D.h src/Core/Window.cpp src/Core/Window.h src/Core/Module.h src/Core/Logger.h src/Core/Loggers/ConsoleLogger.cpp src/Core/Loggers/ConsoleLogger.h src/Core/Shader.cpp src/Core/Shader.h src/Core/Modules/Graphics/Renderer2DModule.cpp src/Core/Modules/Graphics/Renderer2DModule.h src/OpenGL.h src/Core/Modules/Graphics/Camera.cpp src/Core/Modules/Graphics/Camera.h src/Core/Modules/Timing.cpp src/Core/Modules/Timing.h src/Util/TimeUtil.h src/Core/Modules/Graphics/Texture.cpp src/Core/Modules/Graphics/Texture.h)
+        src/Core/Engine.cpp src/Core/Engine.h src/Core/Modules/Graphics/Renderer.h src/Util/FileUtil.h src/Core/Modules/Graphics/Renderer2D.cpp src/Core/Modules/Graphics/Renderer2D.h src/Core/Modules/Graphics/Renderable2D.cpp src/Core/Modules/Graphics/Renderable2D.h src/Core/Window.cpp src/Core/Window.h src/Core/Module.h src/Core/Logger.h src/Core/Loggers/ConsoleLogger.cpp src/Core/Loggers/ConsoleLogger.h src/Core/Modules/Graphics/Shader.cpp src/Core/Modules/Graphics/Shader.h src/Core/Modules/Graphics/Renderer2DModule.cpp src/Core/Modules/Graphics/Renderer2DModule.h src/OpenGL.h src/Core/Modules/Graphics/Camera.cpp src/Core/Modules/Graphics/Camera.h src/Core/Modules/Timing.cpp src/Core/Modules/Timing.h src/Util/TimeUtil.h src/Core/Modules/Graphics/Texture.cpp src/Core/Modules/Graphics/Texture.h)
 
 set (CMAKE_CXX_FLAGS "-m64 -Wall -Wextra -pedantic")
 

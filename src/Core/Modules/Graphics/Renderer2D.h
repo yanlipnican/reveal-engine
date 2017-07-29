@@ -5,7 +5,7 @@
 #pragma once
 
 #include <src/Core/Modules/Graphics/Renderer.h>
-#include "src/Core/Shader.h"
+#include "Shader.h"
 #include <vector>
 #include "Renderable2D.h"
 #include <functional>
@@ -35,12 +35,12 @@ namespace Engine { namespace Core {
                 -1.0f, -1.0f, 0.0f
         };
         const float uv[12] = {
-            -1.0f, -1.0f,
-            1.0f, -1.0f,
-            1.0f,  1.0f,
-            1.0f,  1.0f,
-            -1.0f, 1.0f,
-            -1.0f, -1.0f
+            0, 1,
+            1, 1,
+            1, 0,
+            1, 0,
+            0, 0,
+            0, 1
         };
     public:
         Renderer2D();
