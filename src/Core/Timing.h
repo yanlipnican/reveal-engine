@@ -18,6 +18,8 @@ namespace Engine { namespace Modules {
         Timing(Engine::Core::Engine* engine): Module(engine){}
         void init();
         void update();
+        void start();
+        void end();
         float delta();
     };
 }}

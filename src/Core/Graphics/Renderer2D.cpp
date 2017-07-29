@@ -57,6 +57,8 @@ uint Renderer2D::addVertexBuffer(const char* attrib, uint size, uint stride, uin
 
 void Renderer2D::flush(Camera camera) {
     glEnable(GL_CULL_FACE);
+    glEnable (GL_BLEND);
+    glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     shader->bind();
     shader->setMat4fUniform("view", camera.getView());
     shader->setMat4fUniform("projection", camera.getProjection());
@@ -72,6 +74,7 @@ void Renderer2D::flush(Camera camera) {
     glUseProgram(0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
+    glDisable(GL_BLEND);
     glDisable(GL_CULL_FACE);
 
     if (queue.size() > 0) {

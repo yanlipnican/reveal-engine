@@ -36,7 +36,7 @@ namespace Engine { namespace Core {
         Engine();
         ~Engine();
         void start();
-        void addModule(Module* module, const char* name);
+        Module * addModule(Module* module, const char* name);
         Window * openWindow(const char *name);
         void closeWindow(const char* name);
         Window* getWindow(const char* name);

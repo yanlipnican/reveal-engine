@@ -9,7 +9,14 @@
 #include "Module.h"
 #include "Window.h"
 
+#include <chrono>
+#include <thread>
+
+#define FPS_CAP 125.0f
+
 using namespace Engine::Modules;
+
+static Timing* timing;
 
 namespace Engine { namespace Core {
 
@@ -20,7 +27,7 @@ namespace Engine { namespace Core {
         setupGL();
         // core modules
         addModule(new Renderer2DModule(this), "Renderer2D");
-        addModule(new Timing(this), "Timing");
+        timing = (Timing*)addModule(new Timing(this), "Timing");
     }
 
     Engine::~Engine() {
@@ -49,6 +56,7 @@ namespace Engine { namespace Core {
             iterateModules(updateModule);
             window->swapBuffers();
             window->pollEvents();
+            //std::this_thread::sleep_for(std::chrono::milliseconds((long)(1000.0f / FPS_CAP - timing->delta())));
         }
     }
 
@@ -57,8 +65,9 @@ namespace Engine { namespace Core {
         return closeWindows();
     }
 
-    void Engine::addModule(Module *module, const char* name) {
+    Module* Engine::addModule(Module *module, const char* name) {
         modules[name] = module;
+        return module;
     }
 
     Module *Engine::getModule(const char* name) {
@@ -94,6 +103,7 @@ namespace Engine { namespace Core {
         Window* window = openWindow("Engine");
         glfwMakeContextCurrent(window->getWindow());
         glewExperimental=true;
+        //glfwSwapInterval(1);
         if (glewInit() != GLEW_OK) {
             return false;
         }
