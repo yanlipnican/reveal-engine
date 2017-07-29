@@ -46,7 +46,7 @@ add_definitions(
 
 set(SOURCE_FILES
         main.cpp
-        src/Core/Engine.cpp src/Core/Engine.h src/Core/Modules/Graphics/Renderer.h src/Util/FileUtil.h src/Core/Modules/Graphics/Renderer2D.cpp src/Core/Modules/Graphics/Renderer2D.h src/Core/Modules/Graphics/Renderable2D.cpp src/Core/Modules/Graphics/Renderable2D.h src/Core/Window.cpp src/Core/Window.h src/Core/Module.h src/Core/Logger.h src/Core/Loggers/ConsoleLogger.cpp src/Core/Loggers/ConsoleLogger.h src/Core/Modules/Graphics/Shader.cpp src/Core/Modules/Graphics/Shader.h src/Core/Modules/Graphics/Renderer2DModule.cpp src/Core/Modules/Graphics/Renderer2DModule.h src/OpenGL.h src/Core/Modules/Graphics/Camera.cpp src/Core/Modules/Graphics/Camera.h src/Core/Modules/Timing.cpp src/Core/Modules/Timing.h src/Util/TimeUtil.h src/Core/Modules/Graphics/Texture.cpp src/Core/Modules/Graphics/Texture.h)
+        src/Core/Engine.cpp src/Core/Engine.h src/Core/Graphics/Renderer.h src/Util/FileUtil.h src/Core/Graphics/Renderer2D.cpp src/Core/Graphics/Renderer2D.h src/Core/Graphics/Renderable2D.cpp src/Core/Graphics/Renderable2D.h src/Core/Window.cpp src/Core/Window.h src/Core/Module.h src/Core/Logger.h src/Core/Loggers/ConsoleLogger.cpp src/Core/Loggers/ConsoleLogger.h src/Core/Graphics/Shader.cpp src/Core/Graphics/Shader.h src/Core/Graphics/Renderer2DModule.cpp src/Core/Graphics/Renderer2DModule.h src/OpenGL.h src/Core/Graphics/Camera.cpp src/Core/Graphics/Camera.h src/Core/Timing.cpp src/Core/Timing.h src/Util/TimeUtil.h src/Core/Graphics/Texture.cpp src/Core/Graphics/Texture.h)
 
 set (CMAKE_CXX_FLAGS "-m64 -Wall -Wextra -pedantic")
 

@@ -5,8 +5,8 @@
 #pragma once
 
 #include <src/Core/Engine.h>
-#include <src/Core/Modules/Graphics/Renderer2D.h>
-#include "src/Core/Modules/Timing.h"
+#include <src/Core/Graphics/Renderer2D.h>
+#include "src/Core/Timing.h"
 
 using namespace Engine::Core;
 

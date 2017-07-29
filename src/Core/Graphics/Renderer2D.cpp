@@ -4,8 +4,8 @@
 
 #include <GL/glew.h>
 #include <iostream>
-#include <src/Core/Modules/Graphics/Shader.h>
-#include <src/Core/Modules/Graphics/Camera.h>
+#include <src/Core/Graphics/Shader.h>
+#include <src/Core/Graphics/Camera.h>
 #include "Renderer2D.h"
 
 #define TEXTURE_LIMIT 31
@@ -86,20 +86,19 @@ uint Renderer2D::loadBuffers() {
     glm::mat4* model_matrix_arr = new glm::mat4[queue.size()];
     float* texture_ids = new float[queue.size()];
 
-    std::map<uint, uint> textures;
-
-    uint textureCount = 0;
-
-    uint count = 0;
-
     Queue secondPass;
-    char attrib[13];
+
+    // setup textures
+    std::map<uint, uint> textures;
+    uint textureCount = 0;
+    uint count = 0;
+    char textureAttrib[13];
 
     for (uint i = 0; i < queue.size(); i++) {
 
-        uint texId = queue[i]->getTexture()->getId();
-
+        // Textures
         // TODO: in release mode this works fast, but in debug it slows engine. Create better algorithm
+        uint texId = queue[i]->getTexture()->getId();
         if (!textures.count(texId)) {
             if (textureCount > TEXTURE_LIMIT) {
                 secondPass.push_back(queue[i]);
@@ -107,11 +106,11 @@ uint Renderer2D::loadBuffers() {
                 continue;
             }
             textures[texId] = textureCount;
-            sprintf(attrib, "textures[%u]", textureCount);
+            sprintf(textureAttrib, "textures[%u]", textureCount);
 
             glActiveTexture(GL_TEXTURE0 + textureCount);
             glBindTexture(GL_TEXTURE_2D, texId);
-            glUniform1i(shader->getUniformLocation(attrib), textureCount);
+            glUniform1i(shader->getUniformLocation(textureAttrib), textureCount);
             textureCount++;
         }
         texture_ids[count] = textures[texId];
@@ -123,6 +122,7 @@ uint Renderer2D::loadBuffers() {
 
         count++;
     }
+
     queue = secondPass;
 
     // vertex

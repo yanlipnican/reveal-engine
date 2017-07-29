@@ -6,7 +6,7 @@
 
 #include <map>
 #include <cstring>
-#include "src/Core/Modules/Graphics/Renderer.h"
+#include "src/Core/Graphics/Renderer.h"
 #include "Window.h"
 #include "Module.h"
 #include "Logger.h"

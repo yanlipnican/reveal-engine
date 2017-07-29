@@ -33,7 +33,7 @@ void Renderer2DModule::init() {
 
     cam.setView(
             glm::lookAt(
-                    glm::vec3(0,0,5), // position
+                    glm::vec3(0,0,3), // position
                     glm::vec3(0,0,0), // look at
                     glm::vec3(0,1,0)  // rotation
             )
@@ -45,8 +45,8 @@ void Renderer2DModule::update() {
     std::cout << 1 / timing->delta() << std::endl;
     cam.setView(
             glm::lookAt(
-                    glm::vec3(pos,pos* 2,10), // Camera is at (4,3,3), in World Space
-                    glm::vec3(pos/2.0,pos,0), // and looks at the origin
+                    glm::vec3(pos,pos* 2,3), // Camera is at (4,3,3), in World Space
+                    glm::vec3(pos * .8,pos * 1.6,0), // and looks at the origin
                     glm::vec3(0,1,0)  // Head is up (set to 0,-1,0 to look upside-down)
             )
     );

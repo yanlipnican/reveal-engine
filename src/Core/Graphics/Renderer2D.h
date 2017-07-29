@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <src/Core/Modules/Graphics/Renderer.h>
+#include <src/Core/Graphics/Renderer.h>
 #include "Shader.h"
 #include <vector>
 #include "Renderable2D.h"

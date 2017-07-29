@@ -3,9 +3,9 @@
 //
 
 #include <src/Core/Loggers/ConsoleLogger.h>
-#include <src/Core/Modules/Graphics/Renderer2DModule.h>
+#include <src/Core/Graphics/Renderer2DModule.h>
 #include <iostream>
-#include <src/Core/Modules/Timing.h>
+#include <src/Core/Timing.h>
 #include "Module.h"
 #include "Window.h"
 
