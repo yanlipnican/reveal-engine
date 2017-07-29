@@ -8,7 +8,7 @@
 #include <src/Core/Graphics/Camera.h>
 #include "Renderer2D.h"
 
-#define TEXTURE_LIMIT 31
+#define TEXTURE_LIMIT 32
 
 using namespace Engine::Core;
 

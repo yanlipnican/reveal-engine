@@ -12,10 +12,10 @@ namespace Engine { namespace Core {
         int m_width;
         int m_height;
         int m_comp;
+        const char* m_filename;
         GLint m_texture_filter = GL_LINEAR;
         bool m_isGPUload = false;
         bool m_isRAMload = false;
-        const char* m_filename;
         unsigned char* m_image;
         GLuint m_id;
     public:
