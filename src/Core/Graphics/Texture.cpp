@@ -14,6 +14,11 @@ Texture::Texture(const char *filename): m_filename(filename) {
     GPUload();
 }
 
+Texture::Texture(const char *filename, GLint texture_filter): m_filename(filename), m_texture_filter(texture_filter) {
+    RAMload();
+    GPUload();
+}
+
 void Texture::RAMload() {
     if (m_isRAMload) return;
     m_image = stbi_load(m_filename, &m_width, &m_height, &m_comp, STBI_rgb_alpha);
@@ -27,8 +32,8 @@ void Texture::GPUload() {
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, m_width, m_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, m_image);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, m_texture_filter);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, m_texture_filter);
     glGenerateMipmap(GL_TEXTURE_2D);
     glBindTexture(GL_TEXTURE_2D, 0);
     m_isGPUload = true;

@@ -20,6 +20,7 @@ Renderer2D::Renderer2D() {
 
     addVertexBuffer("vertex", 3, 0, 1, 0);
     addVertexBuffer("uv", 2, 0, 1, 0);
+    addVertexBuffer("atlas", 4, 4* sizeof(float),1 , 0, 1);
     addVertexBuffer("texture_id", 1, sizeof(float), 1, 0, 1);
     addVertexBuffer("color", 3, 3 * sizeof(float), 1, 0, 1);
     addVertexBuffer("model_matrix", 4, sizeof(glm::mat4), 4, sizeof(glm::vec4), 1);
@@ -83,6 +84,7 @@ uint Renderer2D::loadBuffers() {
 
     // setup arrays
     glm::vec3* color_arr = new glm::vec3[queue.size()];
+    glm::vec4* atlas_arr = new glm::vec4[queue.size()];
     glm::mat4* model_matrix_arr = new glm::mat4[queue.size()];
     float* texture_ids = new float[queue.size()];
 
@@ -115,6 +117,8 @@ uint Renderer2D::loadBuffers() {
         }
         texture_ids[count] = textures[texId];
 
+        //m_atlas
+        atlas_arr[count] = queue[i]->getAtlas();
         // model matrix
         model_matrix_arr[count] = queue[i]->getModelMatrix();
         // color
@@ -133,6 +137,10 @@ uint Renderer2D::loadBuffers() {
     bindBuffer("uv");
     glBufferData(GL_ARRAY_BUFFER, sizeof(uv), uv, GL_STATIC_DRAW);
 
+    //m_atlas
+    bindBuffer("atlas");
+    glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec4) * count, atlas_arr, GL_STATIC_DRAW);
+
     // texture id
     bindBuffer("texture_id");
     glBufferData(GL_ARRAY_BUFFER, sizeof(float) * count, texture_ids, GL_STATIC_DRAW);
@@ -140,12 +148,12 @@ uint Renderer2D::loadBuffers() {
 
     // color
     bindBuffer("color");
-    glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3) * count, &color_arr[0], GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3) * count, color_arr, GL_STATIC_DRAW);
     delete[] color_arr;
 
     // model matrix
     bindBuffer("model_matrix");
-    glBufferData(GL_ARRAY_BUFFER, sizeof(glm::mat4) * count, &model_matrix_arr[0], GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(glm::mat4) * count, model_matrix_arr, GL_STATIC_DRAW);
     delete[] model_matrix_arr;
 
     // enable attrib arrays in VAO
