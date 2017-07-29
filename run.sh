@@ -19,8 +19,16 @@ download_file_zip() {
     rm -rf $FILENAME.zip
 }
 
+prepare() {
+    cmake -DCMAKE_BUILD_TYPE=$1 $DIR_NAME
+}
+
 if [ $1 = "prepare" ]; then
-    cmake $DIR_NAME
+    prepare "Debug"
+elif [ $1 = "prepare:debug" ]; then
+    prepare "Debug"
+elif [ $1 = "prepare:release" ]; then
+    prepare "Release"
 elif [ $1 = "deps" ]; then
     download_file_zip "https://github.com/glfw/glfw/releases/download/3.2.1/glfw-3.2.1.zip" "glfw-3.2.1"
     download_file_zip "https://sourceforge.net/projects/glew/files/glew/2.0.0/glew-2.0.0.zip" "glew-2.0.0"
