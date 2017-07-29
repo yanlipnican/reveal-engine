@@ -99,7 +99,7 @@ uint Renderer2D::loadBuffers() {
 
         uint texId = queue[i]->getTexture()->getId();
 
-        // TODO: in release mode this works fast, but in debug it slowdowns engine. Create better algorythm
+        // TODO: in release mode this works fast, but in debug it slows engine. Create better algorithm
         if (!textures.count(texId)) {
             if (textureCount > TEXTURE_LIMIT) {
                 secondPass.push_back(queue[i]);
