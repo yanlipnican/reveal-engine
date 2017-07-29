@@ -7,6 +7,6 @@ in float textureId;
 uniform sampler2D textures[31];
 
 void main(){
-    highp int id = int(textureId);
+    highp int id = int(textureId + .9999);
     color = texture(textures[id], texCord);
 }

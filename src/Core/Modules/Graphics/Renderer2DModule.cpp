@@ -14,7 +14,10 @@ static float pos = 0;
 void Renderer2DModule::init() {
     renderer = new Renderer2D();
     Texture* tex = new Texture("res/test_image.png");
+    Texture* tex2 = new Texture("res/ol_razzle_dazzle.png");
     timing = (Timing*)engine->getModule("Timing");
+
+    bool a = true;
 
     for (int k = 0; k < 57; k++){
         for ( int i = 0; i < 1000; i++ ) {
@@ -22,14 +25,15 @@ void Renderer2DModule::init() {
             item.setColor(glm::vec3(.6, .5, .0 + 1.0/255.0 * i));
             item.translate(glm::vec3(-5 + .3 * i, .3 * k, 0));
             item.scale(glm::vec3(.1, .1, .1));
-            item.setTexture(tex);
+            item.setTexture(a ? tex : tex2);
+            a = !a;
             objs.push_back(item);
         }
     }
 
     cam.setView(
             glm::lookAt(
-                    glm::vec3(0,0,1), // position
+                    glm::vec3(0,0,5), // position
                     glm::vec3(0,0,0), // look at
                     glm::vec3(0,1,0)  // rotation
             )

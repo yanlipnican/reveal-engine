@@ -8,6 +8,8 @@
 #include <src/Core/Modules/Graphics/Camera.h>
 #include "Renderer2D.h"
 
+#define TEXTURE_LIMIT 31
+
 using namespace Engine::Core;
 
 Renderer2D::Renderer2D() {
@@ -18,7 +20,7 @@ Renderer2D::Renderer2D() {
 
     addVertexBuffer("vertex", 3, 0, 1, 0);
     addVertexBuffer("uv", 2, 0, 1, 0);
-    addVertexBuffer("texture_id", 1, 0, 1, 0, 1);
+    addVertexBuffer("texture_id", 1, sizeof(float), 1, 0, 1);
     addVertexBuffer("color", 3, 3 * sizeof(float), 1, 0, 1);
     addVertexBuffer("model_matrix", 4, sizeof(glm::mat4), 4, sizeof(glm::vec4), 1);
 
@@ -69,6 +71,7 @@ void Renderer2D::flush(Camera camera) {
     glUseProgram(0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
+    glDisable(GL_CULL_FACE);
 
     if (queue.size() > 0) {
         flush(camera);
@@ -92,26 +95,25 @@ uint Renderer2D::loadBuffers() {
     Queue secondPass;
     char attrib[13];
 
-    short textureLimit = 31;
-
     for (uint i = 0; i < queue.size(); i++) {
 
         uint texId = queue[i]->getTexture()->getId();
 
         // TODO: in release mode this works fast, but in debug it slowdowns engine. Create better algorythm
         if (!textures.count(texId)) {
-            if (textureCount > textureLimit) {
+            if (textureCount > TEXTURE_LIMIT) {
                 secondPass.push_back(queue[i]);
+                std::cout << "texture_overflow" << std::endl;
                 continue;
             }
             textures[texId] = textureCount;
             sprintf(attrib, "textures[%u]", textureCount);
+
             glActiveTexture(GL_TEXTURE0 + textureCount);
             glBindTexture(GL_TEXTURE_2D, texId);
             glUniform1i(shader->getUniformLocation(attrib), textureCount);
             textureCount++;
         }
-
         texture_ids[count] = textures[texId];
 
         // model matrix
@@ -121,21 +123,20 @@ uint Renderer2D::loadBuffers() {
 
         count++;
     }
-
     queue = secondPass;
 
     // vertex
     bindBuffer("vertex");
     glBufferData(GL_ARRAY_BUFFER, sizeof(quad), quad, GL_STATIC_DRAW);
 
-    // texture id
-    bindBuffer("texture_id");
-    glBufferData(GL_ARRAY_BUFFER, sizeof(texture_ids), texture_ids, GL_STATIC_DRAW);
-    delete[] texture_ids;
-
     // uv
     bindBuffer("uv");
     glBufferData(GL_ARRAY_BUFFER, sizeof(uv), uv, GL_STATIC_DRAW);
+
+    // texture id
+    bindBuffer("texture_id");
+    glBufferData(GL_ARRAY_BUFFER, sizeof(float) * count, texture_ids, GL_STATIC_DRAW);
+    delete[] texture_ids;
 
     // color
     bindBuffer("color");
