@@ -54,9 +54,9 @@ namespace Engine { namespace Core {
          */
         uint loadBuffers();
 
-        uint addVertexBuffer(const char* attrib, uint size, uint stride, uint length, uint offset);
+        uint addVertexBuffer(const char* attrib, uint size, uint stride, uint length, std::size_t offset);
 
-        uint addVertexBuffer(const char* attrib, uint size, uint stride, uint attrib_divisor, uint length, uint offset);
+        uint addVertexBuffer(const char* attrib, uint size, uint stride, uint length, std::size_t offset, uint attrib_divisor);
 
     };
 

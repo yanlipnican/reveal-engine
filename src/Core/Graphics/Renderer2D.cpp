@@ -33,20 +33,20 @@ Renderer2D::~Renderer2D() {
     delete shader;
 }
 
-uint Renderer2D::addVertexBuffer(const char* attrib, uint size, uint stride, uint length, uint offset) {
+uint Renderer2D::addVertexBuffer(const char* attrib, uint size, uint stride, uint length, std::size_t offset) {
     vbo v;
     v.length = length;
     v.attrib_location = shader->getAttribLocation(attrib);
     glGenBuffers(1, &v.id);
     glBindBuffer(GL_ARRAY_BUFFER, v.id);
     for (uint i = 0; i < length; i++) {
-        glVertexAttribPointer(v.attrib_location + i, size, GL_FLOAT, GL_FALSE, stride, (void*)(offset * i));
+        glVertexAttribPointer(v.attrib_location + i, size, GL_FLOAT, GL_FALSE, stride, (GLvoid*)(offset * i));
     }
     vbos[attrib] = v;
     return v.attrib_location;
 }
 
-uint Renderer2D::addVertexBuffer(const char* attrib, uint size, uint stride, uint length, uint offset, uint attrib_divisor) {
+uint Renderer2D::addVertexBuffer(const char* attrib, uint size, uint stride, uint length, std::size_t offset, uint attrib_divisor) {
     uint location = addVertexBuffer(attrib, size, stride, length, offset);
     for (uint i = 0; i < length; i++) {
         glVertexAttribDivisor(location + i, attrib_divisor);
