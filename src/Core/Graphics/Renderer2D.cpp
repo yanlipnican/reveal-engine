@@ -60,8 +60,7 @@ void Renderer2D::flush(Camera camera) {
     glEnable (GL_BLEND);
     glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     shader->bind();
-    shader->setMat4fUniform("view", camera.getView());
-    shader->setMat4fUniform("projection", camera.getProjection());
+    shader->setMat4fUniform("camera", camera.getMatrix());
 
     glBindVertexArray(vao);
     glDrawArraysInstanced(GL_TRIANGLES, 0, 6, loadBuffers());
@@ -92,13 +91,13 @@ uint Renderer2D::loadBuffers() {
     glm::mat4* model_matrix_arr = new glm::mat4[queueSize];
     float* texture_ids = new float[queueSize];
 
-    Queue secondPass;
-
     // setup textures
     std::map<uint, uint> textures;
     uint textureCount = 0;
     uint count = 0;
     char textureAttrib[13];
+
+    Queue secondPass;
 
     for (uint i = 0; i < queue.size(); i++) {
 
@@ -121,8 +120,8 @@ uint Renderer2D::loadBuffers() {
         }
         texture_ids[count] = textures[texId];
 
+        // texture uv
         float* uv = queue[i]->getUV();
-
         for (int t = 0; t < 12; t++) {
             uvTextureArray[count * 12 + t] = uv[t];
         }
