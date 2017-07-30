@@ -27,14 +27,15 @@ namespace Engine { namespace Core {
         VBOs vbos;
         GLuint uv_tex;
         GLuint textureBuffer;
-        const float quad[18] = {
-                -1.0f, -1.0f, 0.0f,
-                1.0f, -1.0f, 0.0f,
-                1.0f,  1.0f, 0.0f,
-        //
-        1.0f,  1.0f, 0.0f,
-        -1.0f, 1.0f, 0.0f,
-        -1.0f, -1.0f, 0.0f
+        const float quad[4 * 3] = {
+            -1.0f, -1.0f, 0.0f,
+            1.0f, -1.0f, 0.0f,
+            1.0f,  1.0f, 0.0f,
+            -1.0f, 1.0f, 0.0f
+        };
+        const uint indices[6] = {
+            0, 1, 2,
+            2, 3, 0,
         };
     public:
         Renderer2D();
@@ -44,14 +45,11 @@ namespace Engine { namespace Core {
     private:
         void bindBuffer(const char* name);
         /**
-         * Returns number of loaded instances
+         * Also returns number of loaded instances
          */
         uint loadBuffers();
-
         uint addVertexBuffer(const char* attrib, uint size, uint stride, uint length, std::size_t offset);
-
         uint addVertexBuffer(const char* attrib, uint size, uint stride, uint length, std::size_t offset, uint attrib_divisor);
-
     };
 
 } }

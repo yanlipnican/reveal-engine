@@ -16,7 +16,7 @@ uniform samplerBuffer uvTexture;
 void main() {
     fcolor = color;
     textureId = texture_id;
-    texCord = texelFetch(uvTexture, gl_InstanceID * 6 + gl_VertexID).rg;
+    texCord = texelFetch(uvTexture, gl_InstanceID * 4 + gl_VertexID).rg;
     gl_Position = camera * model_matrix * vec4(vertex, 1);
 
 }

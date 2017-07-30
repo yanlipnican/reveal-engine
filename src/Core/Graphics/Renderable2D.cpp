@@ -39,7 +39,6 @@ Texture * Renderable2D::getTexture() {
     return m_texture;
 }
 
-
 float *Renderable2D::getUV() {
     return uv;
 }

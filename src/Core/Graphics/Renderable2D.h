@@ -15,13 +15,11 @@ namespace Engine { namespace Core {
         glm::vec3 m_color = glm::vec3(0, 0, 0);
         glm::mat4 m_model_matrix = glm::mat4(1);
         Texture* m_texture;
-        float uv[12] = {
+        float uv[8] = {
                 0, 1,
                 1, 1,
                 1, 0,
-                1, 0,
                 0, 0,
-                0, 1
         };
     public:
         void setColor(glm::vec3 color);

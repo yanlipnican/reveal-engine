@@ -9,7 +9,7 @@
 #include "Renderer2D.h"
 
 #define TEXTURE_LIMIT 31
-
+#define UV_COUNT 8
 using namespace Engine::Core;
 
 Renderer2D::Renderer2D() {
@@ -63,13 +63,14 @@ void Renderer2D::flush(Camera camera) {
     shader->setMat4fUniform("camera", camera.getMatrix());
 
     glBindVertexArray(vao);
-    glDrawArraysInstanced(GL_TRIANGLES, 0, 6, loadBuffers());
+    glDrawElementsInstanced(GL_TRIANGLES, 6, GL_UNSIGNED_INT, indices, loadBuffers());
 
     for (auto vbo = vbos.begin(); vbo != vbos.end(); vbo++) {
         for (uint l = 0; l < vbo->second.length; l++) {
             glDisableVertexAttribArray(vbo->second.attrib_location + l);
         }
     }
+
     glUseProgram(0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
@@ -87,7 +88,7 @@ uint Renderer2D::loadBuffers() {
     // setup arrays
     unsigned long queueSize = queue.size();
     glm::vec3* color_arr = new glm::vec3[queueSize];
-    float* uvTextureArray = new float[queueSize * 12];
+    float* uvTextureArray = new float[queueSize * UV_COUNT];
     glm::mat4* model_matrix_arr = new glm::mat4[queueSize];
     float* texture_ids = new float[queueSize];
 
@@ -122,8 +123,8 @@ uint Renderer2D::loadBuffers() {
 
         // texture uv
         float* uv = queue[i]->getUV();
-        for (int t = 0; t < 12; t++) {
-            uvTextureArray[count * 12 + t] = uv[t];
+        for (int t = 0; t < UV_COUNT; t++) {
+            uvTextureArray[count * UV_COUNT + t] = uv[t];
         }
 
         // model matrix
@@ -142,7 +143,7 @@ uint Renderer2D::loadBuffers() {
 
     // uv texture
     glBindBuffer(GL_TEXTURE_BUFFER, textureBuffer);
-    glBufferData(GL_TEXTURE_BUFFER, sizeof(float) * 12 * count, uvTextureArray, GL_STATIC_DRAW);
+    glBufferData(GL_TEXTURE_BUFFER, sizeof(float) * UV_COUNT * count, uvTextureArray, GL_STATIC_DRAW);
     glActiveTexture(GL_TEXTURE31);
     glBindTexture(GL_TEXTURE_BUFFER, uv_tex);
     glTexBuffer(GL_TEXTURE_BUFFER, GL_RG32F, textureBuffer);
