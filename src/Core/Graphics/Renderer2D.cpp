@@ -8,7 +8,7 @@
 #include <src/Core/Graphics/Camera.h>
 #include "Renderer2D.h"
 
-#define TEXTURE_LIMIT 32
+#define TEXTURE_LIMIT 31
 
 using namespace Engine::Core;
 
@@ -19,8 +19,6 @@ Renderer2D::Renderer2D() {
     glBindVertexArray(vao);
 
     addVertexBuffer("vertex", 3, 0, 1, 0);
-    addVertexBuffer("uv", 2, 0, 1, 0);
-    addVertexBuffer("atlas", 4, 4* sizeof(float),1 , 0, 1);
     addVertexBuffer("texture_id", 1, sizeof(float), 1, 0, 1);
     addVertexBuffer("color", 3, 3 * sizeof(float), 1, 0, 1);
     addVertexBuffer("model_matrix", 4, sizeof(glm::mat4), 4, sizeof(glm::vec4), 1);
@@ -28,6 +26,8 @@ Renderer2D::Renderer2D() {
     glBindVertexArray(0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
 
+    glGenTextures(1, &uv_tex);
+    glGenBuffers(1, &textureBuffer);
 }
 
 Renderer2D::~Renderer2D() {
@@ -86,10 +86,11 @@ void Renderer2D::flush(Camera camera) {
 uint Renderer2D::loadBuffers() {
 
     // setup arrays
-    glm::vec3* color_arr = new glm::vec3[queue.size()];
-    glm::vec4* atlas_arr = new glm::vec4[queue.size()];
-    glm::mat4* model_matrix_arr = new glm::mat4[queue.size()];
-    float* texture_ids = new float[queue.size()];
+    unsigned long queueSize = queue.size();
+    glm::vec3* color_arr = new glm::vec3[queueSize];
+    float* uvTextureArray = new float[queueSize * 12];
+    glm::mat4* model_matrix_arr = new glm::mat4[queueSize];
+    float* texture_ids = new float[queueSize];
 
     Queue secondPass;
 
@@ -120,8 +121,12 @@ uint Renderer2D::loadBuffers() {
         }
         texture_ids[count] = textures[texId];
 
-        //m_atlas
-        atlas_arr[count] = queue[i]->getAtlas();
+        float* uv = queue[i]->getUV();
+
+        for (int t = 0; t < 12; t++) {
+            uvTextureArray[count * 12 + t] = uv[t];
+        }
+
         // model matrix
         model_matrix_arr[count] = queue[i]->getModelMatrix();
         // color
@@ -136,13 +141,14 @@ uint Renderer2D::loadBuffers() {
     bindBuffer("vertex");
     glBufferData(GL_ARRAY_BUFFER, sizeof(quad), quad, GL_STATIC_DRAW);
 
-    // uv
-    bindBuffer("uv");
-    glBufferData(GL_ARRAY_BUFFER, sizeof(uv), uv, GL_STATIC_DRAW);
-
-    //m_atlas
-    bindBuffer("atlas");
-    glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec4) * count, atlas_arr, GL_STATIC_DRAW);
+    // uv texture
+    glBindBuffer(GL_TEXTURE_BUFFER, textureBuffer);
+    glBufferData(GL_TEXTURE_BUFFER, sizeof(float) * 12 * count, uvTextureArray, GL_STATIC_DRAW);
+    glActiveTexture(GL_TEXTURE31);
+    glBindTexture(GL_TEXTURE_BUFFER, uv_tex);
+    glTexBuffer(GL_TEXTURE_BUFFER, GL_RG32F, textureBuffer);
+    glUniform1i(shader->getUniformLocation("uvTexture"), 31);
+    delete[] uvTextureArray;
 
     // texture id
     bindBuffer("texture_id");

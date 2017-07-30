@@ -25,22 +25,16 @@ namespace Engine { namespace Core {
         Shader* shader;
         GLuint vao;
         VBOs vbos;
+        GLuint uv_tex;
+        GLuint textureBuffer;
         const float quad[18] = {
                 -1.0f, -1.0f, 0.0f,
                 1.0f, -1.0f, 0.0f,
                 1.0f,  1.0f, 0.0f,
-                //
-                1.0f,  1.0f, 0.0f,
-                -1.0f, 1.0f, 0.0f,
-                -1.0f, -1.0f, 0.0f
-        };
-        const float uv[12] = {
-            0, 1,
-            1, 1,
-            1, 0,
-            1, 0,
-            0, 0,
-            0, 1
+        //
+        1.0f,  1.0f, 0.0f,
+        -1.0f, 1.0f, 0.0f,
+        -1.0f, -1.0f, 0.0f
         };
     public:
         Renderer2D();

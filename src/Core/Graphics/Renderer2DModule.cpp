@@ -21,14 +21,14 @@ void Renderer2DModule::init() {
     timing = (Timing*)engine->getModule("Timing");
     window = engine->getWindow("Engine");
 
-    for (int k = 0; k < 32; k++){
-        for ( int i = 0; i < 32; i++ ) {
+    for (int k = 0; k < 230; k++){
+        for ( int i = 0; i < 230; i++ ) {
             Renderable2D item;
             item.setColor(glm::vec3(.6, .5, .0 + 1.0/255.0 * i));
-            item.translate(glm::vec3( 1 * i, 1* k, 0));
+            item.translate(glm::vec3( 1.2 * i, 1.2* k, 0));
             item.scale(glm::vec3(.5, .5, 0));
             item.setTexture(atlas);
-            item.setAtlas(glm::vec4(16, 16, i % 16, k % 16));
+//            item.setAtlas(glm::vec4(16, 16, i % 16, k % 16));
             objs.push_back(item);
         }
     }

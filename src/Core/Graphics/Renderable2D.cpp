@@ -39,10 +39,7 @@ Texture * Renderable2D::getTexture() {
     return m_texture;
 }
 
-void Renderable2D::setAtlas(glm::vec4 atlas) {
-    m_atlas = atlas;
-}
 
-glm::vec4 Renderable2D::getAtlas() {
-    return m_atlas;
+float *Renderable2D::getUV() {
+    return uv;
 }
