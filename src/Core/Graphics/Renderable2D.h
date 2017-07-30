@@ -15,23 +15,21 @@ namespace Engine { namespace Core {
         glm::vec3 m_color = glm::vec3(0, 0, 0);
         glm::mat4 m_model_matrix = glm::mat4(1);
         Texture* m_texture;
-        float uv[8] = {
-                0, 1,
-                1, 1,
-                1, 0,
-                0, 0,
-        };
+        float m_uv[8];
     public:
+        Renderable2D();
         void setColor(glm::vec3 color);
         void translate(glm::vec3 vector);
         void setTexture(Texture* texture);
-        Texture* getTexture();
         void rotate(float value, glm::vec3 axis);
         void scale(glm::vec3 scale);
+        Texture* getTexture();
         glm::vec3 getColor();
         glm::mat4 getModelMatrix();
         float* getUV();
         void setUV();
+        void setUVDefault();
+        void setUVAtlas(float gridSizeX, float gridSizeY, float indexX, float indexY);
     };
 
 } }

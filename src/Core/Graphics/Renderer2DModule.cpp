@@ -28,7 +28,7 @@ void Renderer2DModule::init() {
             item.translate(glm::vec3( 1.2 * i, 1.2* k, 0));
             item.scale(glm::vec3(.5, .5, 0));
             item.setTexture(atlas);
-//            item.setAtlas(glm::vec4(16, 16, i % 16, k % 16));
+            item.setUVAtlas(16, 16, i % 16, k % 16);
             objs.push_back(item);
         }
     }
