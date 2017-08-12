@@ -46,6 +46,10 @@ namespace Engine { namespace Core {
         }
     }
 
+    void Engine::compensateSleep() {
+        std::this_thread::sleep_for(std::chrono::milliseconds((long)(1000.0f / FPS_CAP - timing->delta())));
+    }
+
     void Engine::start() {
         iterateModules(initModule);
         Window* window = getWindow("Engine");
@@ -56,7 +60,7 @@ namespace Engine { namespace Core {
             iterateModules(updateModule);
             window->swapBuffers();
             window->pollEvents();
-            //std::this_thread::sleep_for(std::chrono::milliseconds((long)(1000.0f / FPS_CAP - timing->delta())));
+            compensateSleep();
         }
     }
 

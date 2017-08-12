@@ -21,8 +21,8 @@ void Renderer2DModule::init() {
     timing = (Timing*)engine->getModule("Timing");
     window = engine->getWindow("Engine");
 
-    for (int k = 0; k < 230; k++){
-        for ( int i = 0; i < 230; i++ ) {
+    for (int k = 0; k < 100; k++){
+        for ( int i = 0; i < 100; i++ ) {
             Renderable2D item;
             item.setColor(glm::vec3(.6, .5, .0 + 1.0/255.0 * i));
             item.translate(glm::vec3( 1.2 * i, 1.2* k, 0));

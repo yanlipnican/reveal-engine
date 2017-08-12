@@ -46,6 +46,8 @@ namespace Engine { namespace Core {
         void iterateWindows(void (*fun)(Window*));
         bool isRunning();
         bool closeWindows();
+
+        void compensateSleep();
     };
 
 } }

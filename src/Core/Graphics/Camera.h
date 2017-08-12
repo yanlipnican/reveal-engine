@@ -10,6 +10,7 @@
 namespace Engine { namespace Core {
     class Camera {
     public:
+        Camera(){};
         Camera(float fov, float width, float height, float near, float far);
     private:
         glm::mat4 projection;
