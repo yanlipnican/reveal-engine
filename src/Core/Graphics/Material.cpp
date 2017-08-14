@@ -4,18 +4,20 @@
 
 #include "Material.h"
 
-const glm::vec3 &Engine::Core::Material::getDiffuse_color() const {
+using namespace Engine::Core;
+
+glm::vec3 Material::getDiffuse_color(){
     return diffuse_color;
 }
 
-void Engine::Core::Material::setDiffuse_color(const glm::vec3 &diffuse_color) {
-    Material::diffuse_color = diffuse_color;
+void Material::setDiffuse_color(glm::vec3 diffuse_color) {
+    this->diffuse_color = diffuse_color;
 }
 
-Engine::Core::Texture *Engine::Core::Material::getDiffuse_texture() const {
+Texture *Material::getDiffuse_texture(){
     return diffuse_texture;
 }
 
-void Engine::Core::Material::setDiffuse_texture(Engine::Core::Texture *diffuse_texture) {
-    Material::diffuse_texture = diffuse_texture;
+void Material::setDiffuse_texture(Texture *diffuse_texture) {
+    this->diffuse_texture = diffuse_texture;
 }

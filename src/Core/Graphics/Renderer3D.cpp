@@ -16,6 +16,7 @@ void Renderer3D::flush(Camera cam) {
     // shader
     m_shader->bind();
     m_shader->setMat4fUniform("camera", cam.getMatrix());
+    glEnable(GL_DEPTH_TEST);
 
     for (uint i = 0; i < queue.size(); i++) {
         // model matrix

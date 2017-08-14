@@ -15,9 +15,9 @@ private:
     glm::vec3 diffuse_color;
     Texture* diffuse_texture;
 public:
-    const glm::vec3 &getDiffuse_color() const;
-    void setDiffuse_color(const glm::vec3 &diffuse_color);
-    Texture *getDiffuse_texture() const;
+    glm::vec3 getDiffuse_color();
+    void setDiffuse_color(glm::vec3 diffuse_color);
+    Texture *getDiffuse_texture();
     void setDiffuse_texture(Texture *diffuse_texture);
 };
 

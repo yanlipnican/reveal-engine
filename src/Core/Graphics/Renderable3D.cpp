@@ -11,3 +11,11 @@ Mesh *Renderable3D::getMesh() {
 Material* Renderable3D::getMaterial() {
     return m_material;
 }
+
+void Renderable3D::setMesh(Mesh* mesh) {
+    m_mesh = mesh;
+}
+
+void Renderable3D::setMaterial(Material *material) {
+    m_material = material;
+}

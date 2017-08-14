@@ -20,6 +20,8 @@ namespace Core {
         Mesh* m_mesh;
         Material* m_material;
     public:
+        void setMesh(Mesh* mesh);
+        void setMaterial(Material* material);
         Mesh* getMesh();
         Material* getMaterial();
     };

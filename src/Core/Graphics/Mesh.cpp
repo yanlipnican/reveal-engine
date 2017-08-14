@@ -2,6 +2,7 @@
 // Created by yan on 12.8.17.
 //
 
+#include <iostream>
 #include "Mesh.h"
 using namespace Engine::Core;
 
@@ -15,12 +16,15 @@ Mesh::Mesh(std::vector<float>& vertices, std::vector<uint>& indices, std::vector
 
     for (uint i = 0; i < vertices.size(); i++) {
         vertices_arr[i] = vertices[i];
+        std::cout << "v" << vertices_arr[i] << '\n';
     }
     for (uint i = 0; i < indices.size(); i++) {
         m_indices[i] = indices[i];
+        std::cout << "i" << indices[i] << '\n';
     }
     for (uint i = 0; i < uv.size(); i++) {
         uv_arr[i] = uv[i];
+        std::cout << "uv" << uv_arr[i] << '\n';
     }
     for (uint i = 0; i < normals.size(); i++) {
         normals_arr[i] = normals[i];
@@ -29,6 +33,8 @@ Mesh::Mesh(std::vector<float>& vertices, std::vector<uint>& indices, std::vector
     m_indices_length = (uint)indices.size();
 
     glGenVertexArrays(1, &m_vao);
+
+    bind();
 
     glBindBuffer(GL_ARRAY_BUFFER, createBuffer());
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
@@ -77,3 +83,5 @@ uint Mesh::size() {
 uint *Mesh::getIndices() {
     return m_indices;
 }
+
+Mesh::Mesh(BasicShape::Shape shape): Mesh(shape.vertices, shape.indices, shape.uv, shape.normals) {}

@@ -6,6 +6,7 @@
 
 #include <vector>
 #include <src/OpenGL.h>
+#include "BasicShapes.h"
 
 namespace Engine {
 namespace Core {
@@ -21,6 +22,7 @@ private:
     uint* m_indices;
 public:
     Mesh(std::vector<float>& vertices, std::vector<uint>& indices, std::vector<float>& uv, std::vector<float>& normals);
+    Mesh(BasicShape::Shape shape);
     ~Mesh();
     void bind();
     /**

@@ -13,9 +13,6 @@ using namespace Engine::Core;
 namespace Engine { namespace Modules {
 
     class TestModule: public Module {
-    private:
-        Renderer2D* renderer;
-        Timing* timing;
     public:
         TestModule(Engine::Core::Engine* e): Module(e) {};
         void update() override;
