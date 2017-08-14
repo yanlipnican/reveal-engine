@@ -13,7 +13,6 @@
 using namespace Engine::Core;
 
 Renderer2D::Renderer2D() {
-
     shader = new Shader("shaders/2Dshader.vert", "shaders/2Dshader.frag");
     glGenVertexArrays(1, &vao);
     glBindVertexArray(vao);
@@ -23,6 +22,12 @@ Renderer2D::Renderer2D() {
     addVertexBuffer("color", 3, 3 * sizeof(float), 1, 0, 1);
     addVertexBuffer("model_matrix", 4, sizeof(glm::mat4), 4, sizeof(glm::vec4), 1);
 
+    for (auto vbo = vbos.begin(); vbo != vbos.end(); vbo++) {
+        for (uint l = 0; l < vbo->second.length; l++) {
+            glEnableVertexAttribArray(vbo->second.attrib_location + l);
+        }
+    }
+
     glBindVertexArray(0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
 
@@ -31,6 +36,13 @@ Renderer2D::Renderer2D() {
 }
 
 Renderer2D::~Renderer2D() {
+    for (auto it = vbos.begin(); it != vbos.end(); it++) {
+        glDeleteBuffers(1, &it->second.id);
+    }
+    vbos.clear();
+    glDeleteVertexArrays(1, &vao);
+    glDeleteBuffers(1, &textureBuffer);
+    glDeleteTextures(1, &uv_tex);
     delete shader;
 }
 
@@ -64,12 +76,6 @@ void Renderer2D::flush(Camera camera) {
 
     glBindVertexArray(vao);
     glDrawElementsInstanced(GL_TRIANGLES, 6, GL_UNSIGNED_INT, indices, loadBuffers());
-
-    for (auto vbo = vbos.begin(); vbo != vbos.end(); vbo++) {
-        for (uint l = 0; l < vbo->second.length; l++) {
-            glDisableVertexAttribArray(vbo->second.attrib_location + l);
-        }
-    }
 
     glUseProgram(0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -116,7 +122,7 @@ uint Renderer2D::loadBuffers() {
 
             glActiveTexture(GL_TEXTURE0 + textureCount);
             glBindTexture(GL_TEXTURE_2D, texId);
-            glUniform1i(shader->getUniformLocation(textureAttrib), textureCount);
+            shader->set1iUniform(textureAttrib, textureCount);
             textureCount++;
         }
         texture_ids[count] = textures[texId];
@@ -164,13 +170,6 @@ uint Renderer2D::loadBuffers() {
     bindBuffer("model_matrix");
     glBufferData(GL_ARRAY_BUFFER, sizeof(glm::mat4) * count, model_matrix_arr, GL_STATIC_DRAW);
     delete[] model_matrix_arr;
-
-    // enable attrib arrays in VAO
-    for (auto vbo = vbos.begin(); vbo != vbos.end(); vbo++) {
-        for (uint l = 0; l < vbo->second.length; l++) {
-            glEnableVertexAttribArray(vbo->second.attrib_location + l);
-        }
-    }
 
     return count;
 }

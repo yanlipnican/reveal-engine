@@ -3,7 +3,6 @@
 //
 
 #include <src/Core/Loggers/ConsoleLogger.h>
-#include <src/Core/Graphics/Renderer2DModule.h>
 #include <iostream>
 #include <src/Core/Timing.h>
 #include "Module.h"
@@ -12,7 +11,7 @@
 #include <chrono>
 #include <thread>
 
-#define FPS_CAP 125.0f
+#define FPS_CAP 120.0f
 
 using namespace Engine::Modules;
 
@@ -26,7 +25,6 @@ namespace Engine { namespace Core {
     Engine::Engine() {
         setupGL();
         // core modules
-        addModule(new Renderer2DModule(this), "Renderer2D");
         timing = (Timing*)addModule(new Timing(this), "Timing");
     }
 
@@ -46,6 +44,10 @@ namespace Engine { namespace Core {
         }
     }
 
+    void Engine::compensateSleep() {
+        std::this_thread::sleep_for(std::chrono::milliseconds((long)(1000.0f / FPS_CAP - timing->delta())));
+    }
+
     void Engine::start() {
         iterateModules(initModule);
         Window* window = getWindow("Engine");
@@ -56,7 +58,7 @@ namespace Engine { namespace Core {
             iterateModules(updateModule);
             window->swapBuffers();
             window->pollEvents();
-            //std::this_thread::sleep_for(std::chrono::milliseconds((long)(1000.0f / FPS_CAP - timing->delta())));
+            //compensateSleep();
         }
     }
 

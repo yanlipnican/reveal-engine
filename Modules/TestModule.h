@@ -12,12 +12,12 @@ using namespace Engine::Core;
 
 namespace Engine { namespace Modules {
 
-    class Renderer2DModule: public Module {
+    class TestModule: public Module {
     private:
         Renderer2D* renderer;
         Timing* timing;
     public:
-        Renderer2DModule(Engine::Core::Engine* e): Module(e) {};
+        TestModule(Engine::Core::Engine* e): Module(e) {};
         void update() override;
         void init() override;
     };

@@ -97,10 +97,6 @@ void Shader::printError(std::string log) {
     std::cout << log << std::endl;
 }
 
-void Shader::setMat4fUniform(const char *uniform, glm::mat4 matrix) {
-    glUniformMatrix4fv(getUniformLocation(uniform), 1, GL_FALSE, &matrix[0][0]);
-}
-
 GLuint Shader::getUniformLocation(const char *uniform) {
     if (!shader_locations.count(uniform)) {
         shader_locations[uniform] = glGetUniformLocation(id, uniform);
@@ -113,4 +109,16 @@ GLuint Shader::getAttribLocation(const char *attrib) {
         shader_locations[attrib] = glGetAttribLocation(id, attrib);
     }
     return shader_locations[attrib];
+}
+
+void Shader::setMat4fUniform(const char *uniform, glm::mat4 matrix) {
+    glUniformMatrix4fv(getUniformLocation(uniform), 1, GL_FALSE, &matrix[0][0]);
+}
+
+void Shader::set3fUniform(const char *uniform, glm::vec3 vec) {
+    glUniform3f(getUniformLocation(uniform), vec[0], vec[1], vec[2]);
+}
+
+void Shader::set1iUniform(const char *uniform, int i) {
+    glUniform1i(getUniformLocation(uniform), i);
 }

@@ -2,7 +2,7 @@
 // Created by yan on 18.7.17.
 //
 
-#include "Renderer2DModule.h"
+#include "TestModule.h"
 
 using namespace Engine::Modules;
 
@@ -15,14 +15,14 @@ static float posz = 3;
 static Window* window;
 static float speed = 6;
 
-void Renderer2DModule::init() {
+void TestModule::init() {
     renderer = new Renderer2D();
     Texture* atlas = new Texture("res/atlas.png", GL_NEAREST);
     timing = (Timing*)engine->getModule("Timing");
     window = engine->getWindow("Engine");
 
-    for (int k = 0; k < 230; k++){
-        for ( int i = 0; i < 230; i++ ) {
+    for (int k = 0; k < 100; k++){
+        for ( int i = 0; i < 100; i++ ) {
             Renderable2D item;
             item.setColor(glm::vec3(.6, .5, .0 + 1.0/255.0 * i));
             item.translate(glm::vec3( 1.2 * i, 1.2* k, 0));
@@ -42,7 +42,7 @@ void Renderer2DModule::init() {
     );
 }
 
-void Renderer2DModule::update() {
+void TestModule::update() {
 
     if (glfwGetKey(window->getWindow() , GLFW_KEY_D) == GLFW_PRESS) {
         posx += speed * timing->delta();

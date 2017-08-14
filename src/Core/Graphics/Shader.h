@@ -19,9 +19,11 @@ namespace Engine { namespace Core {
         Shader(const char* vertex_filename, const char* fragment_filename);
         ~Shader();
         void bind();
-        void setMat4fUniform(const char* uniform, glm::mat4 matrix);
         GLuint getUniformLocation(const char* uniform);
         GLuint getAttribLocation(const char* attrib);
+        void setMat4fUniform(const char* uniform, glm::mat4 matrix);
+        void set3fUniform(const char *uniform, glm::vec3 vec);
+        void set1iUniform(const char *uniform, int i);
     private:
         GLuint compile(const char* filename, GLenum type);
         bool check(GLuint programID, bool isProgram);
